@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering from Nooki Japan</title>
+
+    <!-- Link the CSS files to this HTML file -->
+    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleHero.css">
+    <link rel="stylesheet" href="styleCategoryTabs.css">
+    <link rel="stylesheet" href="styleCategoryNames.css">
+    <link rel="stylesheet" href="styleProductList.css">
+
+
+    <!-- add favicon (image in tab displayed at top) -->
+    <link rel="icon" href = "images\nookie logo.jpeg" alt = "nookie logo">
+
+</head>
+
+<body>
+
+    <!-- HEADER: NavBar -->
+    <header>
+
+        <div class = "logo-container">
+            <img src = "images\nookie logo.jpeg" alt = "logo of nookie">
+        </div>
+
+        <div class="button-container">
+            <button> Nederlands </button>
+            <button> Log in </button>
+        </div>
+
+    </header>
+
+    <!-- CONTENT: 
+        A) MAIN CONTAINER (left)   -->
+
+    <div id="MainDiv">
+
+        
+    <!-- MainDiv: 
+        * contains: div1: Hero - contains the HeroContent (has bg set as food.jpeg)
+                    div2: HeroContent - contains the logo, title and details of restaurant
+                    div3: CategoryTabs - contains Category Tabs
+                    div4: CategoryName - conatins Category A title and its description text
+                    div5: ProductList - contains Product columns left and right and itemProducts within
+     -->
+
+        <!-- A.1, A.2: Hero & HeroContents -->
+        <div id="Hero">
+            
+            <div id="HeroContent">
+
+                <!-- logo of restaurant -->
+                <img src = "images\nookie logo.jpeg" alt = "logo of nookie" id = "ImgLogo">
+
+                <!-- title of restaurant -->
+                <p id = "restaurantTitle">
+                    Nookie Japanese Restaurant
+                </p>
+
+                <!-- details of restaurant -->
+                <p id = "restaurantDetails">
+                    📍 Main Street 123, 1234 AB, Rotterdam
+                    <br>
+                    ☎️ 0101234567
+                    <br>
+                    🟢 Pickup: Open today 12:00 - 17:00, 18:00 - 22:30
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- A.3: CategoryTabs -->
+        <div id="CategoryTabs">
+
+            <div id="TabContent">
+
+                <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category A </a>   
+                <a href = "some other cite" target="_blank"> Category B </a>
+                <a href = "some other cite" target="_blank"> Category C </a>
+                <a href = "some other cite" target="_blank"> Category D </a>
+                <a href = "some other cite" target="_blank"> Category E </a>
+                <a href = "some other cite" target="_blank"> Category F </a>
+    
+            </div>
+
+            <div id="Indicator"> More  </div>
+        </div>
+
+        <!-- A.4 CategoryName -->
+        <div id="CategoryName">
+
+            <div id="CategoryA">
+                <h4> Category A</h4>
+            </div>
+
+            <div id="CategoryDescription">
+                <p> Category description text</p>
+
+            </div>
+            
+        </div>
+
+        <!-- A.5 PRODUCT LIST -->
+        <div id="ProductList">
+
+            <div id="ProductColumnLeft">
+
+                 <!-- ItemProducts in Left Column -->
+                <div id="ItemProductOne">
+                    <p>Product name <br>
+                    Product description  
+                    $10,00
+                    </p>
+                    <img src = "images\ItemProductImage.jpg">
+                    
+                </div>
+
+                <div id="ItemProductTwo">
+                        <p>Product name <br>
+                        Product description  
+                        $10,00
+                        </p>
+                       
+                    
+                    <img src = "images\ItemProductImage.jpg">
+
+                </div>
+
+                <div id="ItemProductThree">
+                    <p>Product name <br>
+                        Product description
+                        $10,00
+                        </p>
+
+                    <img src = "images\ItemProductImage.jpg">
+
+                </div>
+
+                <div id="ItemProductFour">
+                    <p>Product name <br>
+                        Product description
+                        $10,00
+                        </p>
+
+                    <img src = "images\ItemProductImage.jpg">
+
+                </div>
+            </div>
+
+            <div id="ProductColumnRight"> 
+
+                <!-- ItemProducts in RightColumn -->
+
+                <div id="ItemProductOne">
+                    <p>Product name <br>
+                        Product description
+                        $10,00
+                        </p>
+
+                    <img src = "images\ItemProductImage.jpg">
+
+                </div>
+
+                <div id="ItemProductTwo">
+                    <p>Product name <br>
+                        Product description  
+                        $10,00
+                        </p>
+
+                    <img src = "images\ItemProductImage.jpg">
+
+                </div>
+
+                <div id="ItemProductThree">
+                    <p>Product name <br>
+                        Product description  
+                        $10,00
+                        </p>
+
+                    <img src = "images\ItemProductImage.jpg">
+
+                </div> 
+
+            </div>
+
+        </div>
+
+       
+
+
+
+        
+    </div>
+    
+
+</body>
+</html>

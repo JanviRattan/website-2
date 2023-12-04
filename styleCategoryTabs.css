@@ -1,0 +1,58 @@
+#CategoryTabs {
+
+    display: flex;
+    align-items: center; /* Center items vertically */
+    
+    width: 730px;
+    height: 56px;
+    top: 16px;
+
+    color:rgb(178, 173, 173)
+}
+
+#TabContent {
+
+    display: flex;
+}
+
+#TabContent div {
+    width: 63px;
+    height: 24px;
+    margin-right: 8px;
+    position: relative; /* Needed for positioning the underline */
+
+   
+}
+
+
+#Indicator {
+
+    width: 63px;
+    height: 40px;
+    top: 16px;
+    left: 667px;
+
+    /* Initial styles for the indicator */
+    
+    text-align: center;
+    line-height: 40px; /* Vertically center text */
+    border-radius: 8px;
+
+    /* Transition for smooth animation */
+    transition: background-color 300ms ease-out;
+}
+
+a {
+    /* Remove underline from link */
+    text-decoration: none;
+    font-weight: bolder;
+
+    /* initial text color */
+    color: rgb(178, 173, 173); 
+}
+
+a:hover {
+    color: orange; /* Change text color on hover */
+}
+
+
