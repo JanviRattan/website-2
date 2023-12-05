@@ -1,0 +1,215 @@
+#ProductList {
+
+    display: flex; /* Use flex container to align columns */
+    width : 730px;
+    height: 748px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background-color: aqua; */
+   
+
+}
+
+#ProductColumnLeft {
+    
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: 350px;
+    height: 748px;
+    margin-right: 24px; 
+    margin-left: 0;
+
+    /* background-color: brown; */
+
+}
+
+#ProductColumnRight {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    height: 580px;
+    margin-right: 0;
+
+    /* background-color: brown; */
+
+}
+
+#ItemProductLeft {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start (left) */
+
+   
+    /* borders */
+    border-radius: 8px;
+    border: 1px solid #DCDCDC;
+
+    /* layout */
+
+    padding: 8px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    margin-left: 0;
+
+     /* total gap: 8 + 0 + 16 + 0 = 24px */
+    
+     /* adjust box model properties */
+     box-sizing: border-box; /* Include padding and border in the total width. */
+     width: 350px;
+     height: auto ; /* Allow height to adjust based on content */
+ 
+    
+    /* text */
+    color: black;
+
+}
+
+
+#ItemProductRight {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start (left) */
+
+    /* borders */
+    border-radius: 8px;
+    border: 1px solid #DCDCDC;
+
+    /* layout */
+
+    padding: 8px;
+    margin-left: 0px;
+    margin-bottom: 16px; 
+    margin-right: 0;
+     /* total gap: 8 + 0 + 16 + 0 = 24px */
+
+     /* adjust box model properties */
+     box-sizing: border-box; /* Include padding and border in the total width. */
+     width: 350px;
+     height: auto ; /* Allow height to adjust based on content */
+    
+    /* text */
+    color: black;
+
+    /* background-color: chartreuse; */
+}
+
+
+
+#ProductInfo {
+
+    display: flex;
+    width: 190px;
+    height: 196px;
+    margin: 8px;
+}
+
+#ProductInfo #Counter,
+#ProductInfo #Title {
+    margin-right: 8px; /* Add spacing between Counter and Title */
+} 
+
+#ProductName p {
+    white-space: nowrap; /* Prevent line breaks in Product Name */
+    /* overflow: hidden;
+    text-overflow: ellipsis; Display ellipsis (...) for overflowed text */
+}
+
+#ProductName {
+
+    display: flex;
+    width: 145px;
+    height: 24px;
+    margin-right: 4px; 
+    margin-bottom: 4px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+                /* -----COUNTER DIV----- */
+
+/* a) Layout of Counter DIv */
+#Counter {
+    width: 33px;
+    height: 24px;
+}
+
+/* b) Paragraph inside Content Div */
+#Counter p {
+    
+    /* Cannot set font family to Inter? */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+
+}
+
+                /* -----TITLE DIV----- */
+
+/* a) Layout of Title  DIv */ 
+#Title {
+    width: 108px;
+    height: 24px;
+}
+
+/* b) Pargraph inside Title Div */
+#Title p {
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+
+}
+
+                /* -----DESCRIPTION DIV----- */
+/* a) Layout of Description Div */
+#Description {
+    width: 190px;
+    height: auto;
+}
+
+/* b) Paragraph inside Description Div */
+#Description p {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
+
+}
+
+                /* -----PRICE INDICATOR DIV----- */
+
+/* a) Layput of PriceIndicator Div */
+#PriceIndicator {
+    width: 57px;
+    height: 24px;
+}
+
+/* b) Paragraph inside PriceIndicatorDiv */
+#PriceIndicator p {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;;
+}
+
+#ProductPhoto {
+
+    
+    /*Here, '../' is used to go up one level from the MainC folder to the root folder,
+    and then the 'images/ItemProductImage.jpg' path is specified */
+
+    background-image: url("../images/ItemProductImage.jpg");
+    background-size: cover;
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+    
+}

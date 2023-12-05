@@ -1,0 +1,137 @@
+#CartContent {
+    box-sizing: border-box; /* Include padding and border in the total width and height */
+    width: 302px; 
+    height: 248px;
+  
+    /* margin-top: 20px;  */
+    margin-bottom: 20px;
+  
+    /* background-color: pink; */
+}
+
+#ItemCart {
+    display: flex;
+    /* background-color: cornflowerblue; */
+    width: 302px;
+    height: auto; /*Set height according to contents */
+    margin-bottom: 8px;
+}
+
+/*------------------------- CONTROL QUANTITY------------------ */
+#ControlQuantity {
+
+    display: flex;
+    /* justify-content:space-between; */
+   
+    width: 68px;
+    height: 24px;
+    margin-top: 0;
+    margin-left: 0;
+    /* background-color: bisque; */
+
+}
+
+#Less {
+
+
+    /* make circle */
+    border-radius: 50%;
+    padding: 4px;
+
+    box-sizing: border-box; /* Include padding in the total width and height */
+    
+    width: 8px; /* Total width is 16px & padding is 4 px, border-radius is 4px. Hence width = 16-4-4 = 8px*/
+    height: 8px; /* Total height is 16px & padding is 4 px, border-radius is 4px. Hence height = 16-4-4 = 8px*/
+
+    /* background-color: #F5F5F5; */
+
+    margin-right: auto; /* Push the button to the left */
+ 
+    align-self: center; /* Align the button to the flex container's end (bottom) */
+    
+}
+
+#Less b{
+    align-items: center; /*align to center of its container div*/
+}
+
+#QualityControlNumber{
+    width: 20px;
+    height: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#More {
+
+    /* make circle */
+    border-radius: 50%;
+    padding: 4px;
+
+    box-sizing: border-box; /* Include padding in the total width and height */
+
+    width: 8px; /* Total width is 16px & padding is 4 px, border-radius is 4px. Hence width = 16-4-4 = 8px*/
+    height: 8px; /* Total height is 16px & padding is 4 px, border-radius is 4px. Hence height = 16-4-4 = 8px*/
+
+    /* background-color: #F5F5F5; */
+
+    /* margin-right: 0; */
+    margin-left: auto; /* Push the button to the right */
+
+    
+
+    align-self: center; /* Align the button to the flex container's end (bottom) */
+
+    font-size: 8px;
+    
+}
+
+#More b{
+    text-align: center; /*align to center of its container div*/
+}
+
+/*-------------------------CART ITEM INFO------------------ */
+
+#CartItemInfo {
+    /* background-color: cornsilk; */
+    width: 148px;
+    /* Height set to auto under parent div: ItemCart  */
+    margin-left: 4px;
+    margin-right: 4px;
+
+    /* Font Styles */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
+    
+}
+
+/* This selector targets the <b> (bold) element within #CartItemInfo */
+#CartItemInfo b {
+
+    /* styles for the "Product name" text go here */
+    color: black;
+}
+
+
+/*-------------------------ROW SUBTOTAL------------------ */
+#RowSubTotal {
+
+    /* background-color: rgb(195, 192, 187); */
+    width: 70px;
+    height: 24px;
+    margin-left: 8px;
+    margin-top: 0;
+    margin-right: 0;
+
+    /* font-properties */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right; /* align right*/
+
+}
+
+

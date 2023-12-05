@@ -1,0 +1,69 @@
+/* HEADER */
+#NavBar {
+    display: flex;
+    justify-content: space-between; 
+    /* align-items: right;   */
+    
+    width: 1440px;
+    height: 56px;
+}
+
+#LogoContainer {
+
+    /* If your CSS file is in a folder and the images folder is in the root directory, you may need to go up one level using ../: */
+    background-image: url("../images/nookie logo.jpeg");
+    background-size: cover;
+
+    /* Layout */
+    width: 40px;
+    height: 40px;
+    margin-left: 100px;
+    
+    border-radius: 8px;
+    
+}
+
+/* The div containing the buttons in header */
+#ButtonContainer {
+    
+    display: flex;
+    align-items: center;  /*Align items vertically in the center */
+
+    width: 138px;
+    height: 40px;
+    margin-right: 144px;
+}
+
+
+#ButtonContainerNederlands,
+#ButtonContainerLogin {
+    /* Layout */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    
+    padding: 8px 24px; /* Compact way to set padding for all sides */
+    height: 40px;
+
+    /* Borders */
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #DCDCDC;
+    background-color: #DCDCDC;
+}
+
+#ButtonContainerNederlands {
+    margin-right: 16px; /* Add space between buttons */
+}
+
+#ButtonContainerLogin {
+    width: 119px; /* Adjust the width if needed */
+}
+
+/* Additional styles to ensure the text appears on one line */
+#ButtonContainerNederlands span,
+#ButtonContainerLogin span {
+    white-space: nowrap; /* Prevent text from wrapping */
+    
+}
+

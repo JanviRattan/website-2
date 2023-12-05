@@ -1,0 +1,39 @@
+#CategoryName {
+    width: 730px;
+    height: 60px;
+}
+            /* ------CATEGORY DIV -----> */
+
+    /* layout of Category Div */
+#Category {
+     width: 730px;
+     height: 28px;
+}
+
+/* heading under Category Div */
+#Category h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #222222;
+    margin: 0;
+}
+
+            /* ------CATEGORY DECSRIPTION DIV -----> */
+
+/* layout of CategoryDescription Div */
+#CategoryDescription {
+    width: 730px;
+    height: 28px;
+}
+
+/* paragraph under CategoryDescription Div */
+#CategoryDescription p {
+    font-weight: 400px;
+    size: 16px;
+    line-height: 24px;
+    color:  #808080;
+    margin: 0;
+}
+  
+

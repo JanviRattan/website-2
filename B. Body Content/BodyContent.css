@@ -1,0 +1,11 @@
+
+
+#BodyContent {
+    display: flex;
+    justify-content: center;
+    
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 24px;
+  
+}
