@@ -2,7 +2,8 @@
 
 
 <b>Description:</b> This project is a simple clone of the Nooki Restaurant website's order page, created using HTML and CSS. 
-<b>Purpose:</b>The purpose of this project is to practice and showcase fundamental web development skills by replicating the structure and styling of the original order page. 
+<br>
+<b>Purpose:</b> The purpose of this project is to practice and showcase fundamental web development skills by replicating the structure and styling of the original order page. 
 <br> 
 <b>Features:</b>
 <br>
