@@ -186,7 +186,7 @@
     /*Here, '../' is used to go up one level from the MainC folder to the root folder,
     and then the 'images/ItemProductImage.jpg' path is specified */
 
-    background-image: url("../images/item-product-image.jpg");
+    background-image: url("../../images/item-product-image.jpg");
     background-size: cover;
     width: 96px;
     height: 96px;

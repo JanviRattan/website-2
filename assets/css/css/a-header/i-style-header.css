@@ -10,7 +10,7 @@
 
 .logo-container {
     /* If your CSS file is in a folder and the images folder is in the root directory, you may need to go up one level using ../: */
-    background-image: url("../images/nookie-logo.jpeg");
+    background-image: url("../../images/nookie-logo.jpeg");
     background-size: cover;
 
     /* Layout */
