@@ -1,0 +1,26 @@
+.floating-basket {
+    padding: 24px;
+   
+    width: 326px; /* total width = 350px & padding 24px . Hence set width = 350-24 = 316px*/
+    height: 541px; /* total height = 565px & padding 24px . Hence set width = 565-24 = 541px*/
+    margin-top: 24px;
+
+    border-radius: 8px;
+    border: 1px solid #DCDCDC;
+    
+    /* background-color: blueviolet; */
+}
+
+.your-order {
+    width: 302px;
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+.your-order p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
