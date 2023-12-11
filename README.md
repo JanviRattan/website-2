@@ -5,8 +5,8 @@ This project is a simple clone of the Nooki Restaurant website's order page, cre
 Features:
 <br>
 <ul>
-  HTML and CSS implementation
-  Responsive design for various screen sizes
-  Mimics the layout and styling of the Nooki Restaurant order page
+  <li>HTML and CSS implementation</li>
+  <li>Responsive design for various screen sizes </li>
+  <li>Mimics the layout and styling of the Nooki Restaurant order page</li>
 </ul>
 
