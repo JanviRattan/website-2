@@ -1,29 +1,36 @@
 .cart-fees {
-    display: flex;
     width: 302px;
     height: 24px;
-    margin-bottom: 20px;
-    /* margin-right: 0; */
-    /* background-color: darkkhaki; */
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-self: stretch;
 }
 
 .discount-text {
-    width: 224px;
-    height: 24px;
-    line-height: 24px;
-    /* background-color: palevioletred; */
+    align-self: stretch;
+    align-items: flex-start;
+    color: var(--Success, #28A745);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Paragraph Bold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
 }
 
 .sub-total {
-    width: 70px;
-    height: 24px;
-
-    margin-left:auto;
+    color: var(--Success, #28A745);
     text-align: right;
-    /* background-color: antiquewhite; */
-
-    /* font properties */
-    font-weight: 400px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Paragraph */
+    font-family: Inter;
     font-size: 16px;
-    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-right: 0;
 }

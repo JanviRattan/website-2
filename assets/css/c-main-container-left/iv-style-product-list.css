@@ -1,194 +1,181 @@
 .product-list {
-    display: flex; /* Use flex container to align columns */
-    width : 730px;
-    height: 748px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /* background-color: aqua; */
+    /* layout */
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .product-column-left {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start (left) */
-    width: 350px;
-    height: 748px;
-    margin-right: 24px; 
-    margin-left: 0;
-
-    /* background-color: brown; */
-}
-
-.product-column-right {
+    /* layout */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 350px;
-    height: 580px;
-    margin-right: 0;
-
-    /* background-color: brown; */
+    gap: 24px;
 }
 
-.item-product-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the start (left) */
-
-   
-    /* borders */
-    border-radius: 8px;
-    border: 1px solid #DCDCDC;
-
+.product-column-right {
     /* layout */
-
-    padding: 8px;
-    margin-right: 0px;
-    margin-bottom: 16px;
-    margin-left: 0;
-
-     /* total gap: 8 + 0 + 16 + 0 = 24px */
-    
-     /* adjust box model properties */
-     box-sizing: border-box; /* Include padding and border in the total width. */
-     width: 350px;
-     height: auto ; /* Allow height to adjust based on content */
-
-    /* text */
-    color: black;
-}
-
-.item-product-right {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the start (left) */
-
-    /* borders */
-    border-radius: 8px;
-    border: 1px solid #DCDCDC;
-
-    /* layout */
-
-    padding: 8px;
-    margin-left: 0px;
-    margin-bottom: 16px; 
-    margin-right: 0;
-     /* total gap: 8 + 0 + 16 + 0 = 24px */
-
-     /* adjust box model properties */
-     box-sizing: border-box; /* Include padding and border in the total width. */
-     width: 350px;
-     height: auto ; /* Allow height to adjust based on content */
-    
-    /* text */
-    color: black;
-
-    /* background-color: chartreuse; */
-}
-
-.product-info {
-    display: flex;
-    width: 190px;
-    margin: 8px;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
 }
 
-.product-info .counter,
-.product-info .title {
-    margin-right: 8px; /* Add spacing between Counter and Title */
-} 
+.first-item-product-left, .second-item-product-right {
+    width: 302px;
+    height: 196px;
 
-.product-name p {
-    white-space: nowrap; /* Prevent line breaks in Product Name */
-    /* overflow: hidden;
-    text-overflow: ellipsis; Display ellipsis (...) for overflowed text */
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 16px;
+
+    /* style */
+    border-radius: 8px;
+    border: 1px solid var(--storefront-brand-color-customizable, #FF6347);
+    background: var(--White, #FFF);
+
+    /* Button Shadow */
+    box-shadow: 4px 4px 0px 0px rgba(34, 34, 34, 0.16);
+}
+
+.first-item-product-left-product-info, .second-item-product-right-product-info {
+    width: 190;
+    height: 196;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.first-item-product-left-description, .second-item-product-right-description {
+    width: 190px;
+    height: 132px;
+
+    align-self: stretch;
+
+    color: var(--Gray, #808080);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Small */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+/* remaining products in left and right columns */
+.item-product-left, .item-product-right {
+    width: 302px;
+    height: 96px;
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 16px;
+
+    /* style */
+    border-radius: 8px;
+    border: 1px solid var(--Gainsboro, #DCDCDC);
+    background: var(--White, #FFF);
+}
+
+/* product-info for remaining products */
+.item-product-info {
+    width: 190px;
+    height: 86px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+
+}
+
+/* description of remaining products (both left and rightc columns) */
+.description {
+    width: 190px;
+    height: 22px;
+
+    /* layout */
+    align-self: stretch;
+
+    color: var(--Gray, #808080);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Small */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
 }
 
 .product-name {
     display: flex;
+    align-items: center;
+    gap: 4px;
     width: 145px;
     height: 24px;
-    margin-right: 4px; 
-    margin-bottom: 4px;
-    margin-left: 0;
-    margin-top: 0;
 }
 
-                /* -----COUNTER DIV----- */
-
-/* a) Layout of Counter DIv */
 .counter {
     width: 33px;
     height: 24px;
-}
-
-/* b) Paragraph inside Content Div */
-.counter p {
+    color: var(--Gray, #808080);
+    font-feature-settings: 'clig' off, 'liga' off;
     
-    /* Cannot set font family to Inter? */
-    font-weight: 400;
+    /* Paragraph */
+    font-family: Inter;
     font-size: 16px;
-    line-height: 24px;
-    color: #808080;
-
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
 }
-
-                /* -----TITLE DIV----- */
-
-/* a) Layout of Title  DIv */ 
 .title {
     width: 108px;
     height: 24px;
-}
+    color: var(--Black, #222);
+    font-feature-settings: 'clig' off, 'liga' off;
 
-/* b) Pargraph inside Title Div */
-.title p {
-
-    font-weight: 600;
+    /* Paragraph Bold */
+    font-family: Inter;
     font-size: 16px;
-    line-height: 24px;
-    color: #222222;
-
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
 }
 
-                /* -----DESCRIPTION DIV----- */
-/* a) Layout of Description Div */
-.description {
-    width: 190px;
-    height: auto;
-}
 
-/* b) Paragraph inside Description Div */
-.description p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #808080;
-}
-
-                /* -----PRICE INDICATOR DIV----- */
-
-/* a) Layput of PriceIndicator Div */
 .price-indicator {
     width: 57px;
     height: 24px;
-}
 
-/* b) Paragraph inside PriceIndicatorDiv */
-.price-indicator p {
-    font-weight: 400px;
+    color: var(--Black, #222);
+    font-feature-settings: 'clig' off, 'liga' off;
+    
+    /* Paragraph */
+    font-family: Inter;
     font-size: 16px;
-    line-height: 24px;
-    color: #222222;;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
 }
 
 .product-photo {
-    /*Here, '../' is used to go up one leve up
-    you need to go up one level (../) to reach the assets folder and then navigate to the images folder.
-    */
-    background-image: url("../../images/item-product-image.jpg");
-    background-size: cover;
+    /* layout */
     width: 96px;
     height: 96px;
+    flex-shrink: 0;
+
+    /* style */
     border-radius: 8px;
+
+    /*Here, '../' is used to go up one leve up you need to go up one level (../) to reach the assets folder and then navigate to the images folder. */
+    background-image: url("../../images/item-product-image.jpg");
+    background-size: cover;
 }

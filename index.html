@@ -36,7 +36,7 @@
     <!-- A. HEADER: nav-bar -->
     <header class="nav-bar">
 
-        <div class = "logo-container">   </div>
+        <img src = "assets\images\nookie-logo.jpeg" alt = "logo of nooki" class = "img-logo-navbar">   
 
         <div class ="button-container">
             <button class="button-container-nederlands">Nederlands</button>
@@ -48,7 +48,7 @@
     <!-- XXXXXXXXXXXXXXXXXXXXXXXXX      END OF HEADER    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
     <!-- B. BODY CONTENT:  is divided into 2 main Divs : Main Container (left), FLoating Basket (right) ) -->
-    <div class="body-content">
+    <div class="body-content"> 
     
         <!-- 1) MAIN CONTAINER (left)   -->
 
@@ -73,17 +73,15 @@
         
                         <!-- title of restaurant -->
                         <p class = "restaurant-title">
-                            Nookie Japanese Restaurant
-                        </p>
+                            Nooki Japanese Restaurant
+                        
         
                         <!-- details of restaurant -->
-                        <p class = "restaurant-details">
-                            📍 Main Street 123, 1234 AB, Rotterdam
-                            <br>
-                            ☎️ 0101234567
-                            <br>
-                            🟢 Pickup: Open today 12:00 - 17:00, 18:00 - 22:30
-                        </p>
+                        <div class = "restaurant-details">
+                            <div>📍 Main Street 123, 1234 AB, Rotterdam</div>
+                            <div>☎️ 0101234567</div>
+                            <div>🟢 Pickup: Open today 12:00 - 17:00, 18:00 - 22:30</div>
+                        </div>
         
                     </div>
         
@@ -92,58 +90,51 @@
         
                 <!-- A.3: category-tabs -->
                 <div class="category-tabs">
+
+                    <div class = "categories">
+                        <div class="tab-item">
+                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category A </a>   
+                        </div>
+    
+                        <div class="tab-item">
+                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category B </a>   
+                        </div>
+    
+                        <div class="tab-item">
+                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category C </a>   
+                        </div>
+    
+                        <div class="tab-item">
+                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category D </a>   
+                        </div>
+    
+                        <div class="tab-item">
+                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category E </a>   
+                        </div>
+    
+                        <div class="tab-item">
+                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> Category F </a>   
+                        </div>
+
+                    </div>
         
-                    <div class="tab-content">
+                    <div class="tab-item-more">
+                        <div class = "tab-content-more"><a href = "http://127.0.0.1:5500/index.htm" target="_blank"> More </a></div>
+                    </div>
 
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> category A </a>   
-                        </div>
-
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> category B </a>   
-                        </div>
-
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> category C </a>   
-                        </div>
-
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> category D </a>   
-                        </div>
-
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> category E </a>   
-                        </div>
-
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> category F </a>   
-                        </div>
-
-                        <div class="tab-item">
-                            <a href = "http://127.0.0.1:5500/index.htm" target="_blank"> more </a>   
-                        </div>
-   
                 </div>
-
-            </div>
         
                 <!---------------------- CATEGORY A ---------------------------->
         
                 <!-- A.4 category-name -->
                 <div class="category-name">
         
-                    <div class="category">
-                        <h4> category A</h4>
-                    </div>
+                    <div class="category">Category A</div>
         
-                    <div class="category-description">
-                        <p> category description text</p>
-        
-                    </div>
+                    <div class="category-description">Category description text</div>
                     
                 </div>
         
-                
                 <!-- A.5 PRODUCT LIST for category A -->
                 <div class="product-list">
         
@@ -153,36 +144,29 @@
                         <!-- 4 item-products in Left Column:  -->
         
                         <!-- item-product 1. -->
-                        <div class="item-product-left">
+                        <div class="first-item-product-left">
         
                             <!-- First Main Child of item-product 1: product-info -->
-                            <div class="product-info">
+                            <div class="first-item-product-left-product-info">
         
                                 <!-- sub child 1: PRODUCT NAME -->
                                 <div class="product-name">
-        
-                                    <div class="counter"> <p>22 x</p> </div>
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
+                                    <div class="counter">22 x</div>
+                                    <div class="title">Product Name</div>
                                 </div>
         
                                 <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description such as
-                                        some ingredient, ingredient,
-                                            ingredient, ingredient,
-                                            ingredient, ingredient,
-                                            ingredient, ingredient,
-                                            ingredient, ingredient.      
-                                    </p>               
+                                <div class="first-item-product-left-description">
+                                    Product description such as
+                                    some ingredient, ingredient,
+                                    ingredient, ingredient,
+                                    ingredient, ingredient, 
+                                    ingredient, ingredient,
+                                    ingredient, ingredient.
                                 </div>
         
                                 <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
+                                <div class="price-indicator">$10,00</div>
         
                             <!--product-info Closing Tag  -->
                             </div>
@@ -190,108 +174,83 @@
                             <!-- Second Main Child of item-product 1: PRODUCT PHOTO -->
                             <div class="product-photo"> </div>
         
-                        <!--item-product 1 Closing Tag  -->
-                        </div>
+                    <!--item-product 1 Closing Tag  -->
+                    </div>
         
                         <!-- --------------- -->
         
+                    <!-- item-product 2. -->
+                    <div class="item-product-left">
         
-                        <!-- item-product 2. -->
-                        <div class="item-product-left">
+                        <!-- First Main Child of item-product 2: product-info -->
+                        <div class="product-info">
+    
+                            <!-- sub child 1: PRODUCT NAME -->
+                            <div class="product-name">
+                                <div class="title">Product Name</div>
+                            </div>
+    
+                            <!-- sub child 2: DESCRIPTION -->
+                            <div class="description">Product description.</div>
+    
+                            <!-- sub child 3: PRICE INDICATOR -->
+                            <div class="price-indicator">$10,00</div>
+    
+                        <!--product-info Closing Tag  -->
+                        </div>
+    
+                        <!-- Second Main Child of item-product 2: PRODUCT PHOTO -->
+                        <div class="product-photo"> </div>
+    
+                    <!--item-product 2 Closing Tag  -->
+                    </div>
         
-                            <!-- First Main Child of item-product 2: product-info -->
-                            <div class="product-info">
+                    <!-- --------------- -->
+    
+                    <!-- item-product 3. -->
+                    <div class="item-product-left">
         
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description.      
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
-        
-                            <!--product-info Closing Tag  -->
+                        <!-- First Main Child of item-product 3: product-info -->
+                        <div class="product-info">
+    
+                            <!-- sub child 1: PRODUCT NAME -->
+                            <div class="product-name">
+                                <div class="title">Product Name</div>
                             </div>
         
-                            <!-- Second Main Child of item-product 2: PRODUCT PHOTO -->
-                            <div class="product-photo"> </div>
-        
-                        <!--item-product 2 Closing Tag  -->
+                            <!-- sub child 2: DESCRIPTION -->
+                            <div class="description">Product description.</div>
+    
+                            <!-- sub child 3: PRICE INDICATOR -->
+                            <div class="price-indicator">$10,00</div>
+    
+                        <!--product-info Closing Tag  -->
                         </div>
         
+                        <!-- Second Main Child of item-product 3: PRODUCT PHOTO -->
+                        <div class="product-photo"> </div>
+    
+                    <!--item-product 3 Closing Tag  -->
+                    </div>
+        
                         <!-- --------------- -->
+    
+                    <!-- item-product 4. -->
+                    <div class="item-product-left">
+    
+                        <!-- First Main Child of item-product 4: product-info -->
+                        <div class="product-info">
         
-                        <!-- item-product 3. -->
-                        <div class="item-product-left">
-        
-                            <!-- First Main Child of item-product 3: product-info -->
-                            <div class="product-info">
-        
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description 
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
-        
-                            <!--product-info Closing Tag  -->
+                            <!-- sub child 1: PRODUCT NAME -->
+                            <div class="product-name">
+                                <div class="title">Product Name</div>
                             </div>
-        
-                            <!-- Second Main Child of item-product 3: PRODUCT PHOTO -->
-                            <div class="product-photo"> </div>
-        
-                        <!--item-product 3 Closing Tag  -->
-                        </div>
-        
-                        <!-- --------------- -->
-        
-                        <!-- item-product 4. -->
-                        <div class="item-product-left">
-        
-                            <!-- First Main Child of item-product 4: product-info -->
-                            <div class="product-info">
-        
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description       
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
+    
+                            <!-- sub child 2: DESCRIPTION -->
+                            <div class="description">Product description</div>
+    
+                            <!-- sub child 3: PRICE INDICATOR -->
+                            <div class="price-indicator">$10,00</div>
         
                             <!--product-info Closing Tag  -->
                             </div>
@@ -299,46 +258,39 @@
                             <!-- Second Main Child of item-product 4: PRODUCT PHOTO -->
                             <div class="product-photo"> </div>
         
-                        <!--item-product 4 Closing Tag  -->
-                        </div>
-        
-                    <!--product-column-left Closing Tag  -->
+                    <!--item-product 4 Closing Tag  -->
                     </div>
+    
+                <!--product-column-left Closing Tag  -->
+                </div>
         
-                    <!-- ------------------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------------------- -->
         
         
-                    <!-- A.5.2. RIGHT PRODUCT COLUMN -->
-        
-                    <!-- 3 item-products in Right Column:  -->
-                    <div class="product-column-right">
-        
-                        <!-- item-products in Right Column:  -->
-        
+                <!-- A.5.2. RIGHT PRODUCT COLUMN -->
+    
+                <!-- 3 item-products in Right Column:  -->
+                <div class="product-column-right">
+
+    
+                    <!-- item-products in Right Column:  -->
+    
                     <!-- item-product 1 -->
                     <div class="item-product-right">
-        
+    
                         <!-- First Main Child of item-product 1: product-info -->
                         <div class="product-info">
-        
+    
                             <!-- sub child 1: PRODUCT NAME -->
                             <div class="product-name">
-        
-                                <div class="title">  <p>Product Name </p> </div>
-        
+                                <div class="title">Product Name</div>
                             </div>
         
                             <!-- sub child 2: DESCRIPTION -->
-                            <div class="description">
-                                <p>
-                                    Product description  
-                                </p>               
-                            </div>
+                            <div class="description">Product description.</div>
         
                             <!-- sub child 3: PRICE INDICATOR -->
-                            <div class="price-indicator">
-                                <p> $10,00 </p>
-                            </div>
+                            <div class="price-indicator">$10,00</div>
         
                         <!--product-info Closing Tag  -->
                         </div>
@@ -350,403 +302,76 @@
                     </div>
         
                     <!-- --------------- -->
-        
-                    <!-- item-product 2 -->
-                    <div class="item-product-right">
-        
-                        <!-- First Main Child of item-product 2: product-info -->
-                        <div class="product-info">
-        
-                            <!-- sub child 1: PRODUCT NAME -->
-                            <div class="product-name">
-        
-                                <div class="title">  <p>Product Name </p> </div>
-        
-                            </div>
-        
-                            <!-- sub child 2: DESCRIPTION -->
-                            <div class="description">
-                                <p>
-                                    Product description such as
-                                    some ingredient, ingredient,
-                                    ingredient, ingredient,
-                                    ingredient, ingredient,
-                                    ingredient, ingredient,
-                                    ingredient, ingredient.
-                                </p>               
-                            </div>
-        
-                            <!-- sub child 3: PRICE INDICATOR -->
-                            <div class="price-indicator">
-                                <p> $10,00 </p>
-                            </div>
-        
-                        <!--product-info Closing Tag  -->
+    
+                <!-- item-product 2 -->
+                <div class="second-item-product-right">
+    
+                    <!-- First Main Child of item-product 2: product-info -->
+                    <div class="second-item-product-right-product-info">
+    
+                        <!-- sub child 1: PRODUCT NAME -->
+                        <div class="product-name">
+                            <div class="title">Product Name</div>
                         </div>
-        
-                        <!-- Second Main Child of item-product 2: PRODUCT PHOTO -->
-                        <div class="product-photo"> </div>
-        
-                    <!--item-product 2 Closing Tag  -->
-                    </div>
-        
-                    <!-- --------------- -->
-        
-                    <!-- item-product 3 -->
-                    <div class="item-product-right">
-        
-                        <!-- First Main Child of ItemProduc t3: product-info -->
-                        <div class="product-info">
-        
-                            <!-- sub child 1: PRODUCT NAME -->
-                            <div class="product-name">
-        
-                                <div class="title">  <p>Product Name </p> </div>
-        
-                            </div>
-        
-                            <!-- sub child 2: DESCRIPTION -->
-                            <div class="description">
-                                <p>
-                                    Product description
-                                </p>               
-                            </div>
-        
-                            <!-- sub child 3: PRICE INDICATOR -->
-                            <div class="price-indicator">
-                                <p> $10,00 </p>
-                            </div>
-        
-                        <!--product-info Closing Tag  -->
+    
+                        <!-- sub child 2: DESCRIPTION -->
+                        <div class="second-item-product-right-description">
+                                Product description such as
+                                some ingredient, ingredient,
+                                ingredient, ingredient,
+                                ingredient, ingredient,
+                                ingredient, ingredient,
+                                ingredient, ingredient.
                         </div>
-        
-                        <!-- Second Main Child of item-product 3: PRODUCT PHOTO -->
-                        <div class="product-photo"> </div>
-        
-                    <!--item-product 3 Closing Tag  -->
+    
+                        <!-- sub child 3: PRICE INDICATOR -->
+                        <div class="price-indicator">$10,00</div>
+    
+                    <!--product-info Closing Tag  -->
                     </div>
-        
-        
-        
-                <!--product-column-right Closing Tag  -->
+    
+                    <!-- Second Main Child of item-product 2: PRODUCT PHOTO -->
+                    <div class="product-photo"> </div>
+    
+                <!--item-product 2 Closing Tag  -->
                 </div>
-        
-                <!------------------------------------------------------------------------------------------->
-        
-                <!--product-list Closing Tag  -->
+    
+                <!-- --------------- -->
+    
+                <!-- item-product 3 -->
+                <div class="item-product-right">
+    
+                    <!-- First Main Child of ItemProduc t3: product-info -->
+                    <div class="product-info">
+    
+                        <!-- sub child 1: PRODUCT NAME -->
+                        <div class="product-name">
+                            <div class="title">Product Name</div>
+                        </div>
+    
+                        <!-- sub child 2: DESCRIPTION -->
+                        <div class="description">Product description.</div>
+    
+                        <!-- sub child 3: PRICE INDICATOR -->
+                        <div class="price-indicator">$10,00</div>
+    
+                    <!--product-info Closing Tag  -->
+                    </div>
+    
+                    <!-- Second Main Child of item-product 3: PRODUCT PHOTO -->
+                    <div class="product-photo"> </div>
+    
+                <!--item-product 3 Closing Tag  -->
                 </div>
-        
-        
-                <!---------------------- CATEGORY B ---------------------------->
-        
-                <!--  B.4 category-name -->
-                <div class="category-name">
-        
-                    <div class="category">
-                        <h4> category B</h4>
-                    </div>
-        
-                    <div class="category-description">
-                        <p> category description text</p>
-        
-                    </div>
-                    
-                </div>
-        
-        
-                <!-- B.5 PRODUCT LIST for category B -->
-                <div class="product-list">
-        
-                    <!-- B.5.1 LEFT PRODUCT COLUMN -->
-                    <div class="product-column-left">
-        
-                        <!-- 4 item-products in Left Column:  -->
-        
-                        <!-- item-product 1. -->
-                        <div class="item-product-left">
-        
-                            <!-- First Main Child of item-product 1: product-info -->
-                            <div class="product-info">
-        
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="counter"> <p>22 x</p> </div>
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: dESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description such as
-                                        some ingredient, ingredient,
-                                            ingredient, ingredient,
-                                            ingredient, ingredient,
-                                            ingredient, ingredient,
-                                            ingredient, ingredient.      
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
-        
-                            <!--product-info Closing Tag  -->
-                            </div>
-        
-                            <!-- Second Main Child of item-product 1: PRODUCT PHOTO -->
-                            <div class="product-photo"> </div>
-        
-                        <!--item-product 1 Closing Tag  -->
-                        </div>
-        
-                        <!-- --------------- -->
-        
-        
-                        <!-- item-product 2. -->
-                        <div class="item-product-left">
-        
-                            <!-- First Main Child of item-product 2: product-info -->
-                            <div class="product-info">
-        
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description.      
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
-        
-                            <!--product-info Closing Tag  -->
-                            </div>
-        
-                            <!-- Second Main Child of item-product 2: PRODUCT PHOTO -->
-                            <div class="product-photo"> </div>
-        
-                        <!--item-product 2 Closing Tag  -->
-                        </div>
-        
-                        <!-- --------------- -->
-        
-                        <!-- item-product 3. -->
-                        <div class="item-product-left">
-        
-                            <!-- First Main Child of item-product 3: product-info -->
-                            <div class="product-info">
-        
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description 
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
-        
-                            <!--product-info Closing Tag  -->
-                            </div>
-        
-                            <!-- Second Main Child of item-product 3: PRODUCT PHOTO -->
-                            <div class="product-photo"> </div>
-        
-                        <!--item-product 3 Closing Tag  -->
-                        </div>
-        
-                        <!-- --------------- -->
-        
-                        <!-- item-product 4. -->
-                        <div class="item-product-left">
-        
-                            <!-- First Main Child of item-product 4: product-info -->
-                            <div class="product-info">
-        
-                                <!-- sub child 1: PRODUCT NAME -->
-                                <div class="product-name">
-        
-                                    <div class="title">  <p>Product Name </p> </div>
-        
-                                </div>
-        
-                                <!-- sub child 2: DESCRIPTION -->
-                                <div class="description">
-                                    <p>
-                                        Product description       
-                                    </p>               
-                                </div>
-        
-                                <!-- sub child 3: PRICE INDICATOR -->
-                                <div class="price-indicator">
-                                    <p> $10,00 </p>
-                                </div>
-        
-                            <!--product-info Closing Tag  -->
-                            </div>
-        
-                            <!-- Second Main Child of item-product 4: PRODUCT PHOTO -->
-                            <div class="product-photo"> </div>
-        
-                        <!--item-product 4 Closing Tag  -->
-                        </div>
-        
-                    <!--product-column-left Closing Tag  -->
-                    </div>
-        
-                    <!-- ------------------------------------------------------------------------------------- -->
-        
-        
-                    <!-- B.5.2. RIGHT PRODUCT COLUMN -->
-        
-                    <!-- 3 item-products in Right Column:  -->
-                    <div class="product-column-right">
-        
-                        <!-- item-products in Right Column:  -->
-        
-                    <!-- item-product 1 -->
-                    <div class="item-product-right">
-        
-                        <!-- First Main Child of item-product 1: product-info -->
-                        <div class="product-info">
-        
-                            <!-- sub child 1: PRODUCT NAME -->
-                            <div class="product-name">
-        
-                                <div class="title">  <p>Product Name </p> </div>
-        
-                            </div>
-        
-                            <!-- sub child 2: DESCRIPTION -->
-                            <div class="description">
-                                <p>
-                                    Product description  
-                                </p>               
-                            </div>
-        
-                            <!-- sub child 3: PRICE INDICATOR -->
-                            <div class="price-indicator">
-                                <p> $10,00 </p>
-                            </div>
-        
-                        <!--product-info Closing Tag  -->
-                        </div>
-        
-                        <!-- Second Main Child of item-product 1: PRODUCT PHOTO -->
-                        <div class="product-photo"> </div>
-        
-                    <!--item-product 1 Closing Tag  -->
-                    </div>
-        
-                    <!-- --------------- -->
-        
-                    <!-- item-product 2 -->
-                    <div class="item-product-right">
-        
-                        <!-- First Main Child of item-product 2: product-info -->
-                        <div class="product-info">
-        
-                            <!-- sub child 1: PRODUCT NAME -->
-                            <div class="product-name">
-        
-                                <div class="title">  <p>Product Name </p> </div>
-        
-                            </div>
-        
-                            <!-- sub child 2: dESCRIPTION -->
-                            <div class="description">
-                                <p>
-                                    Product description such as
-                                    some ingredient, ingredient,
-                                    ingredient, ingredient,
-                                    ingredient, ingredient,
-                                    ingredient, ingredient,
-                                    ingredient, ingredient.
-                                </p>               
-                            </div>
-        
-                            <!-- sub child 3: PRICE INDICATOR -->
-                            <div class="price-indicator">
-                                <p> $10,00 </p>
-                            </div>
-        
-                        <!--product-info Closing Tag  -->
-                        </div>
-        
-                        <!-- Second Main Child of item-product 2: PRODUCT PHOTO -->
-                        <div class="product-photo"> </div>
-        
-                    <!--item-product 2 Closing Tag  -->
-                    </div>
-        
-                    <!-- --------------- -->
-        
-                    <!-- item-product 3 -->
-                    <div class="item-product-right">
-        
-                        <!-- First Main Child of ItemProduc t3: product-info -->
-                        <div class="product-info">
-        
-                            <!-- sub child 1: PRODUCT NAME -->
-                            <div class="product-name">
-        
-                                <div class="title">  <p>Product Name </p> </div>
-        
-                            </div>
-        
-                            <!-- sub child 2: DESCRIPTION -->
-                            <div class="description">
-                                <p>
-                                    Product description
-                                </p>               
-                            </div>
-        
-                            <!-- sub child 3: PRICE INDICATOR -->
-                            <div class="price-indicator">
-                                <p> $10,00 </p>
-                            </div>
-        
-                        <!--product-info Closing Tag  -->
-                        </div>
-        
-                        <!-- Second Main Child of item-product 3: PRODUCT PHOTO -->
-                        <div class="product-photo"> </div>
-        
-                    <!--item-product 3 Closing Tag  -->
-                    </div>
-        
-        
-        
-                <!--product-column-right Closing Tag  -->
-                </div>
-        
-                <!------------------------------------------------------------------------------------------->
-        
-                <!--product-list Closing Tag  -->
-                </div>
-        
-            
+    
+            <!--product-column-right Closing Tag  -->
+            </div>
+    
+            <!------------------------------------------------------------------------------------------->
+    
+            <!--product-list Closing Tag  -->
+            </div>
+    
             <!--Main Div Closing tag  -->
             </div>
         
@@ -767,12 +392,15 @@
 
 
                     <!-----------------------  1. your-order -------------------- -->
-                    <div class="your-order"><p>Your order </p></div>
+                    <div class="your-order">Your order </div>
 
                     <!-----------------------  2. order-option -------------------- -->
                     <div class="order-option">
-                        <div class="Text">👜 <b>Pickup</b> at our location      ✎</div>
-                    </div>
+                        <div class="bag">👜</div>
+                        <div class="text"><b>Pickup</b> at our location</div>
+                        <div class="pencil">✎</div>
+                    </div>  
+
 
                     <!-----------------------  3. cart-content -------------------- -->
                     <div class="cart-content">
@@ -787,19 +415,16 @@
                                                                     -->
 
                             <div class="control-quantity">
-                                <button class="less">-</button>
+                                <button class="less"><div class ="minus-icon">-</div></button>
                                 <div class="control-quantity-number">22</div>
-                                <button class="more">+</button>
+                                <button class="more"><div class="plus-icon">+</div></button>
                             </div>
                         
                             <div class="cart-item-info">
-                                <b>Product name A</b>
-                                <br>
-                                Choice name A
-                                <br>
-                                Choice name B
-                                <br>
-                                Choice name C
+                                <div class="item-name">Product name A</div>
+                                <div class="item-options">Choice name A</div>
+                                <div class="item-options">Choice name B</div>
+                                <div class="item-options">Choice name C</div>
                             </div>
 
                             <div class="row-sub-total">$ 220,00</div>
@@ -817,17 +442,15 @@
                                                                     -->
 
                             <div class="control-quantity">
-                                <button class="less"><b>-</b></button>
+                                <button class="less"><div class ="minus-icon">-</div></button>
                                 <div class="control-quantity-number">1</div>
-                                <button class="more"><b>+</b></button>
+                                <button class="more"><div class="plus-icon">+</div></button>
                             </div>
                         
                             <div class="cart-item-info">
-                                <b>Product name B</b>
-                                <br>
-                                Choice name A
-                                <br>
-                                Choice name B
+                                <div class="item-name">Product name B</div>
+                                <div class="item-options">Choice name A</div>
+                                <div class="item-options">Choice name B</div>
                             </div>
 
                             <div class="row-sub-total">$ 10,00</div>
@@ -845,15 +468,14 @@
                                                                     -->
 
                             <div class="control-quantity">
-                                <button class="less">-</button>
+                                <button class="less"><div class ="minus-icon">-</div></button>
                                 <div class="control-quantity-number">8</div>
-                                <button class="more">+</button>
+                                <button class="more"><div class="plus-icon">+</div></button>
                             </div>
-                        
+
                             <div class="cart-item-info">
-                                <b>Product name C</b>
-                                <br>
-                                Choice name A
+                                <div class="item-name">Product name C</div>
+                                <div class="item-options">Choice name A</div>
                             </div>
 
                             <div class="row-sub-total">$ 80,00</div>
@@ -871,19 +493,17 @@
 
                     <!-----------------------  5. cart-fees -------------------- -->
                     <div class="cart-fees">
-
                         <div class="discount-text">Discount</div>
                         <div class="sub-total">$15,50</div>
-
                     </div>
 
-                     <!-----------------------  5. checkout -------------------- -->
-                     <button class="checkout-button">
+                        <!-----------------------  5. checkout -------------------- -->
+                        <button class="checkout-button">
                         <div class="label-left">Checkout</div>
                         <div class="label-right">$294,50</div>
-                     </button>
+                        </button>
 
-                     
+                        
 
                 <!--floating-basket closing tag  -->
                 </div>
@@ -895,31 +515,24 @@
 
     <!-- C. FOOTER -->
     <footer>
-        <div class="orderich-logo">orderich </div> 
+        <div class="orderich-logo"> </div> 
 
         <div class="footer-content">
 
-            <div class="footer-content-one">
+            <div class="footer-details">
                 <b>Nooki Japanese Restaurant, powered by</b>
-                <a href = "https://tracxn.com/d/companies/orderich/__3jaJeEXyG67aF3oNb9CImxvnpz2MtVCWrszgTQ3Xi1Q" target="_blank">  Orderich  </a>
+                <a href = "https://tracxn.com/d/companies/orderich/__3jaJeEXyG67aF3oNb9CImxvnpz2MtVCWrszgTQ3Xi1Q" target="_blank">Orderich </a>
             </div>
 
-            <div class="footer-content-two">
+            <div class="footer-links">
 
-                <div class="terms-and-conditions">
-                    <a href = "https://www.oderich.com.br/en/politica-de-privacclassade" target="_blank">Terms and Conditions</a>
-                </div>
-
-                <div class="privacy-policy">
-                    <a href = "https://www.oderich.com.br/en/politica-de-privacclassade" target="_blank">Privacy Policy</a>
-                </div>
-                
-            </div>
-            
-                        
-        </div>
+                <div class="terms-and-conditions">Terms and Conditions</div>
+                <div class="privacy-policy">Privacy Policy</div>
+     
+        </div> 
 
     </footer>
+
 
 
 </body>

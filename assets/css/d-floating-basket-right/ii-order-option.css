@@ -1,13 +1,47 @@
 .order-option {
-    /* background-color: aquamarine; */
-
+    /* layout */
     width: 302px;
     height: 48px;
-    margin-bottom: 20px; 
+    display: flex;
+
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+
+    /* style */
     border-radius: 8px;
-    border: 1px solid #DCDCDC;
+    border: 1px solid var(--Gainsboro, #DCDCDC);
+    background: var(--White, #FFF);
 }
 
- .text {
-    text-align: center;
-  }
+.bag {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding: 0.667px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.text {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 4px;
+  margin-left: 4px;
+  margin-top: 5px;
+}
+
+.pencil {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding: 0.667px 0.667px 0.523px 0.522px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 48px;
+  margin-top:5px;
+}
+

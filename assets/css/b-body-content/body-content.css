@@ -1,8 +1,16 @@
+/* body {
+
+    display: flex;
+    justify-content: flex-end;
+    width : 1440px;
+} */
+
 .body-content {
     display: flex;
     justify-content: center;
-    
-    margin-left: 60px;
+    width: 1440;
+   
+    /* margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 24px;
+    margin-bottom: 24px; */
 }

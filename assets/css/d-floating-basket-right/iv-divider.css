@@ -1,6 +1,10 @@
 .divider {
     width: 302px;
     height: 1px;
+    display: flex;
+    height: 1px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     background-color: #DCDCDC;
-    margin-bottom: 20px;
 }
