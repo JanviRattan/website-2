@@ -23,20 +23,17 @@
 
 .first-item-product-left, .second-item-product-right {
     width: 302px;
-    height: 196px;
+    /* height: 196px; */
 
     display: flex;
     padding: 24px;
     align-items: flex-start;
     gap: 16px;
-
+    
     /* style */
     border-radius: 8px;
-    border: 1px solid var(--storefront-brand-color-customizable, #FF6347);
+    border: 1px solid var(--Gainsboro, #DCDCDC);
     background: var(--White, #FFF);
-
-    /* Button Shadow */
-    box-shadow: 4px 4px 0px 0px rgba(34, 34, 34, 0.16);
 }
 
 .first-item-product-left-product-info, .second-item-product-right-product-info {
@@ -53,7 +50,7 @@
 
 .first-item-product-left-description, .second-item-product-right-description {
     width: 190px;
-    height: 132px;
+    /* height: 132px; */
 
     align-self: stretch;
 
@@ -71,7 +68,7 @@
 /* remaining products in left and right columns */
 .item-product-left, .item-product-right {
     width: 302px;
-    height: 96px;
+    /* height: 96px; */
     display: flex;
     padding: 24px;
     align-items: flex-start;
@@ -86,7 +83,7 @@
 /* product-info for remaining products */
 .item-product-info {
     width: 190px;
-    height: 86px;
+    /* height: 86px; */
 
     display: flex;
     flex-direction: column;
@@ -99,7 +96,7 @@
 /* description of remaining products (both left and rightc columns) */
 .description {
     width: 190px;
-    height: 22px;
+    /* height: 22px; */
 
     /* layout */
     align-self: stretch;
@@ -166,7 +163,7 @@
     line-height: 24px; /* 150% */
 }
 
-.product-photo {
+.product-photo-pizza {
     /* layout */
     width: 96px;
     height: 96px;
@@ -176,6 +173,34 @@
     border-radius: 8px;
 
     /*Here, '../' is used to go up one leve up you need to go up one level (../) to reach the assets folder and then navigate to the images folder. */
-    background-image: url("../../images/item-product-image.jpg");
+    background-image: url("../../images/pizza.jpg");
+    background-size: cover;
+}
+
+.product-photo-sushi {
+    /* layout */
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+
+    /* style */
+    border-radius: 8px;
+
+    /*Here, '../' is used to go up one leve up you need to go up one level (../) to reach the assets folder and then navigate to the images folder. */
+    background-image: url("../../images/sushi.jpg");
+    background-size: cover;
+}
+
+.product-photo-bento {
+    /* layout */
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+
+    /* style */
+    border-radius: 8px;
+
+    /*Here, '../' is used to go up one leve up you need to go up one level (../) to reach the assets folder and then navigate to the images folder. */
+    background-image: url("../../images/bento.png");
     background-size: cover;
 }

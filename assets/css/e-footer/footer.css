@@ -1,5 +1,5 @@
 footer {
-    width: 1152px;
+    width: 100%; /* Occupy the full width of the viewport */
     height: 102px;
     display: flex;
     padding: 48px 144px;
@@ -10,6 +10,7 @@ footer {
     /* style */
     background: var(--Whitesmoke, #F5F5F5);
 }
+
 
 .orderich-logo {
     width: 117px;
