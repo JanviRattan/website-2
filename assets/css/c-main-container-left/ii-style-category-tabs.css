@@ -1,6 +1,10 @@
 .category-tabs {
     width: 730px;
     height: 56px;
+
+    /* fix the position at its current place (should stay fixed while scrolling) */
+    position: sticky;
+    top: 50px; /*stay below height of nav-bar but above category name (whose height is 60px) */
 }
 
 .categories {

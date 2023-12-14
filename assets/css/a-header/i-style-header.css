@@ -8,6 +8,10 @@
     align-items: flex-start;
     gap: 839px;
     flex-shrink: 0;
+
+    /* fix the position of nav-bar at the top of page */
+    position: sticky;
+    top: 0;
 }
 
 .img-logo-navbar {
