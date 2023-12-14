@@ -5,6 +5,8 @@
     /* fix the position at its current place (should stay fixed while scrolling) */
     position: sticky;
     top: 50px; /*stay below height of nav-bar but above category name (whose height is 60px) */
+    background-color: white;
+    color: black; /*color of text*/
 }
 
 .categories {

@@ -26,6 +26,7 @@ footer {
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;    
+    color: var(--Link, #0D6EFD);
 }
 
 .footer-details {
@@ -46,7 +47,7 @@ footer {
 
 a {
      /* Orderich text */
-     color: var(--Link, #0D6EFD);
+     
      font-feature-settings: 'clig' off, 'liga' off;
  
      /* Paragraph */
