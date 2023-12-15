@@ -1,7 +1,7 @@
 .order-option {
     /* layout */
     width: 302px;
-    height: 48px;
+    height: 40px;
     display: flex;
 
     align-self: stretch;
@@ -10,8 +10,9 @@
 
     /* style */
     border-radius: 8px;
-    border: 1px solid var(--Gainsboro, #DCDCDC);
-    background: var(--White, #FFF);
+    border: 1px solid var(--Gainsboro, #351c1c);
+    background: var(--White, #c1bebe);
+    font-size: larger;
 }
 
 .bag {

@@ -5,6 +5,8 @@
     flex-direction: row;
     gap: 8px;
     align-self: stretch;
+
+    margin-top: auto;
 }
 
 .discount-text {

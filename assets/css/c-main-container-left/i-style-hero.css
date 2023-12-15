@@ -1,6 +1,6 @@
 .main-container {
     width: 730px;
-    height: 2096px;
+    /* height: 2096px; */
    
     display: inline-flex;
     flex-direction: column;

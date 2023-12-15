@@ -51,6 +51,9 @@
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
+    font-weight: bolder;
+    color: rgb(222, 178, 96);
+    font-size:medium;
 }
 
 a {

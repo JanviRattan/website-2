@@ -33,7 +33,7 @@
 
     <!--The whole webpage,under body tag, is divided into 3 parts:
     A. Header
-    B. Body Content ( is divided into 2 main Divs : Main Container (left), FLoating Basket (right) )
+    B. Body Content ( is divided into 2 main Divs : Main Container (left), Floating Basket (right) )
     C. Footer -->
 
     <!-- A. HEADER: nav-bar -->
@@ -50,7 +50,7 @@
 
     <!-- XXXXXXXXXXXXXXXXXXXXXXXXX      END OF HEADER    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
-    <!-- B. BODY CONTENT:  is divided into 2 main Divs : Main Container (left), FLoating Basket (right) ) -->
+    <!-- B. BODY CONTENT:  is divided into 2 main Divs : Main Container (left), Floating Basket (right) ) -->
     <div class="body-content"> 
     
         <!-- 1) MAIN CONTAINER (left)   -->
@@ -106,20 +106,22 @@
 
                 </div>
         
+                
+                    <div class="category-name">
+        
+                        <div id="category-a">Category A</a>
+                        </div>
+            
+                        <div class="category-description">Pizzas</div>
+                        
+                    </div>
+            
+                    <!-- A.5 PRODUCT LIST for category A -->
+                    <div class="product-list">
+                
                 <!---------------------- CATEGORY A: PIZZAS ---------------------------->
         
                 <!-- A.4 category-name -->
-                <div class="category-name">
-        
-                    <div id="category-a">Category A</a>
-                    </div>
-        
-                    <div class="category-description">Pizzas</div>
-                    
-                </div>
-        
-                <!-- A.5 PRODUCT LIST for category A -->
-                <div class="product-list">
         
                     <!-- A.5.1 LEFT PRODUCT COLUMN -->
                     <div class="product-column-left">
@@ -127,10 +129,10 @@
                         <!-- 4 item-products in Left Column:  -->
         
                         <!-- item-product 1. -->
-                        <div class="first-item-product-left">
+                        <div class="item-product-left">
         
                             <!-- First Main Child of item-product 1: product-info -->
-                            <div class="first-item-product-left-product-info">
+                            <div class="item-product-left-product-info">
         
                                 <!-- sub child 1: PRODUCT NAME -->
                                 <div class="product-name">
@@ -139,7 +141,7 @@
                                 </div>
         
                                 <!-- sub child 2: DESCRIPTION -->
-                                <div class="first-item-product-left-description">
+                                <div class="item-product-left-description">
                                     A classic Italian pizza featuring a thin crust topped with fresh tomato sauce, mozzarella cheese, and fresh basil leaves. Simple, yet a burst of flavors in every bite.
                                 </div>
         
@@ -282,10 +284,10 @@
                     <!-- --------------- -->
     
                 <!-- item-product 2 -->
-                <div class="second-item-product-right">
+                <div class="item-product-right">
     
                     <!-- First Main Child of item-product 2: product-info -->
-                    <div class="second-item-product-right-product-info">
+                    <div class="item-product-right-product-info">
     
                         <!-- sub child 1: PRODUCT NAME -->
                         <div class="product-name">
@@ -293,7 +295,7 @@
                         </div>
     
                         <!-- sub child 2: DESCRIPTION -->
-                        <div class="second-item-product-right-description">
+                        <div class="item-product-right-description">
                             Packed with a colorful assortment of fresh vegetables such as bell peppers, red onions, black olives, and mushrooms, the vegetarian supreme pizza offers a healthy and flavorful option for pizza lovers. 
                         </div>
     
@@ -348,17 +350,20 @@
             
                 <!---------------------- CATEGORY B: Sushi---------------------------->
         
+                
+                    <div class="category-name">
+        
+                        <div id="category-b">Category B</div>
+            
+                        <div class="category-description">Sushi</div>
+                        
+                    </div>
+            
+                    <!-- B.5 PRODUCT LIST for category B -->
+                    <div class="product-list">
+                
                 <!-- B.4 category-name -->
-                <div class="category-name">
-        
-                    <div id="category-b">Category B</div>
-        
-                    <div class="category-description">Sushi</div>
-                    
-                </div>
-        
-                <!-- B.5 PRODUCT LIST for category B -->
-                <div class="product-list">
+               
         
                     <!-- B.5.1 LEFT PRODUCT COLUMN -->
                     <div class="product-column-left">
@@ -366,10 +371,10 @@
                         <!-- 4 item-products in Left Column:  -->
         
                         <!-- item-product 1. -->
-                        <div class="first-item-product-left">
+                        <div class="item-product-left">
         
                             <!-- First Main Child of item-product 1: product-info -->
-                            <div class="first-item-product-left-product-info">
+                            <div class="item-product-left-product-info">
         
                                 <!-- sub child 1: PRODUCT NAME -->
                                 <div class="product-name">
@@ -378,7 +383,7 @@
                                 </div>
         
                                 <!-- sub child 2: DESCRIPTION -->
-                                <div class="first-item-product-left-description">
+                                <div class="item-product-left-description">
                                     A classic Nigiri sushi featuring a slice of fresh, buttery maguro (tuna) atop a small bed of vinegared rice. Simple, yet a celebration of the ocean's finest flavors.
                                 </div>
         
@@ -521,10 +526,10 @@
                     <!-- --------------- -->
     
                 <!-- item-product 2 -->
-                <div class="second-item-product-right">
+                <div class="item-product-right">
     
                     <!-- First Main Child of item-product 2: product-info -->
-                    <div class="second-item-product-right-product-info">
+                    <div class="item-product-right-product-info">
     
                         <!-- sub child 1: PRODUCT NAME -->
                         <div class="product-name">
@@ -532,7 +537,7 @@
                         </div>
     
                         <!-- sub child 2: DESCRIPTION -->
-                        <div class="second-item-product-right-description">
+                        <div class="item-product-right-description">
                             Experience a delightful crunch with the Tempura Shrimp Roll. Shrimp tempura, avocado, and cucumber are rolled together, creating a satisfying contrast between the crispy tempura and the creamy interior.
                         </div>
     
@@ -587,18 +592,20 @@
 
             <!---------------------- CATEGORY C: Japanese Bento Box:---------------------------->
         
-                <!-- C.4 category-name -->
-                <div class="category-name">
-        
-                    <div id="category-c">Category C</a>
+            
+                    <!-- C.4 category-name -->
+                    <div class="category-name">
+                            
+                        <div id="category-c">Category C</a>
+                        </div>
+
+                        <div class="category-description">Japanese Bento Box</div>
+                        
                     </div>
-        
-                    <div class="category-description">Japanese Bento Box</div>
-                    
-                </div>
-        
-                <!-- C.5 PRODUCT LIST for category A -->
-                <div class="product-list">
+
+                    <!-- C.5 PRODUCT LIST for category A -->
+                    <div class="product-list">
+            
         
                     <!-- C.5.1 LEFT PRODUCT COLUMN -->
                     <div class="product-column-left">
@@ -606,10 +613,10 @@
                         <!-- 4 item-products in Left Column:  -->
         
                         <!-- item-product 1. -->
-                        <div class="first-item-product-left">
+                        <div class="item-product-left">
         
                             <!-- First Main Child of item-product 1: product-info -->
-                            <div class="first-item-product-left-product-info">
+                            <div class="item-product-left-product-info">
         
                                 <!-- sub child 1: PRODUCT NAME -->
                                 <div class="product-name">
@@ -618,7 +625,7 @@
                                 </div>
         
                                 <!-- sub child 2: DESCRIPTION -->
-                                <div class="first-item-product-left-description">
+                                <div class="item-product-left-description">
                                     Grilled chicken glazed with sweet teriyaki sauce served alongside steamed rice, pickled vegetables, and a side of miso soup.
                                 </div>
         
@@ -761,10 +768,10 @@
                     <!-- --------------- -->
     
                 <!-- item-product 2 -->
-                <div class="second-item-product-right">
+                <div class="item-product-right">
     
                     <!-- First Main Child of item-product 2: product-info -->
-                    <div class="second-item-product-right-product-info">
+                    <div class="item-product-right-product-info">
     
                         <!-- sub child 1: PRODUCT NAME -->
                         <div class="product-name">
@@ -772,7 +779,7 @@
                         </div>
     
                         <!-- sub child 2: DESCRIPTION -->
-                        <div class="second-item-product-right-description">
+                        <div class="item-product-right-description">
                             Bento showcasing Ebi Fry (breaded and deep-fried shrimp) served with tonkatsu sauce, shredded cabbage, rice, and a side of miso soup.
                         </div>
     
@@ -868,70 +875,22 @@
                                                                     iii. row-sub-total
                                                                     -->
 
-                            <div class="control-quantity">
+                            <!-- <div class="control-quantity">
                                 <button class="less"><div class ="minus-icon">-</div></button>
                                 <div class="control-quantity-number">0</div>
                                 <button class="more"><div class="plus-icon">+</div></button>
-                            </div>
+                            </div> -->
+
+                            <!-- <div class="control-quantity">Control Quantity</div> -->
+                                
                         
                             <div class="cart-item-info">
-                                <div id="item-category-a">Category A</div>
-                                <div class="item-options">food item</div>
+                                <div class="item-options">Your items:</div>
+                                <!-- <div class="item-options">food item</div> -->
                             </div>
 
-                            <div class="row-sub-total">$0</div>
 
                         <!--item-cart 1 closing tag  -->
-                        </div>
-
-                        <!-- ----------------------------- -->
-
-                        <!-- item-cart 2 -->
-                        <div class="item-cart">
-                            <!-- item-cart has 3 divs: i. control-quantity
-                                                                    ii. cart-item-info
-                                                                    iii. row-sub-total
-                                                                    -->
-
-                            <div class="control-quantity">
-                                <button class="less"><div class ="minus-icon">-</div></button>
-                                <div class="control-quantity-number">0</div>
-                                <button class="more"><div class="plus-icon">+</div></button>
-                            </div>
-                        
-                            <div class="cart-item-info">
-                                <div id="item-category-b">Category B</div>
-                                <div class="item-options">food item</div>
-                            </div>
-
-                            <div class="row-sub-total">$0</div>
-
-                        <!--item-cart 2 closing tag  -->
-                        </div>
-
-                        <!-- --------------------------------- -->
-
-                        <!-- item-cart 3 -->
-                        <div class="item-cart">
-                            <!-- item-cart has 3 divs: i. control-quantity
-                                                                    ii. cart-item-info
-                                                                    iii. row-sub-total
-                                                                    -->
-
-                            <div class="control-quantity">
-                                <button class="less"><div class ="minus-icon">-</div></button>
-                                <div class="control-quantity-number">0</div>
-                                <button class="more"><div class="plus-icon">+</div></button>
-                            </div>
-
-                            <div class="cart-item-info">
-                                <div id="item-category-c">Category C</div>
-                                <div class="item-options">food-item</div>
-                            </div>
-
-                            <div class="row-sub-total">$0</div>
-
-                        <!--item-cart 3 closing tag  -->
                         </div>
 
                     <!--cart-content closing tag  -->
@@ -942,15 +901,11 @@
                     <!-----------------------  4. divider -------------------- -->
                     <div class="divider"> </div>
 
-                    <!-----------------------  5. cart-fees -------------------- -->
-                    <div class="cart-fees">
-                        <div class="discount-text">Discount</div>
-                        <div class="sub-total">$0</div>
-                    </div>
+                   
 
                         <!-----------------------  5. checkout -------------------- -->
                         <button class="checkout-button">
-                        <div class="label-left">Checkout</div>
+                        <div class="label-left">Total</div>
                         <div class="label-right">$0</div>
                         </button>
 
@@ -985,7 +940,7 @@
     </footer>
 
 
-    <script src = "assets/javascript/hover-effects.js"> </script>
+    <script src = "assets/javascript/hover-effect.js"> </script>
     <script src = "assets/javascript/in-page-links.js"> </script>
     <script src = "assets/javascript/less-more-buttons.js"> </script>
     <script src = "assets/javascript/update-cart.js"> </script>

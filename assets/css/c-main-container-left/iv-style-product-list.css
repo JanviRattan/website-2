@@ -21,52 +21,7 @@
     gap: 24px;
 }
 
-.first-item-product-left, .second-item-product-right {
-    width: 302px;
-    /* height: 196px; */
-
-    display: flex;
-    padding: 24px;
-    align-items: flex-start;
-    gap: 16px;
-    
-    /* style */
-    border-radius: 8px;
-    border: 1px solid var(--Gainsboro, #DCDCDC);
-    background-color: #f6f4f47c;
-    color: whitesmoke;
-}
-
-.first-item-product-left-product-info, .second-item-product-right-product-info {
-    width: 190;
-    height: 196;
-
-    /* layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    flex: 1 0 0;
-}
-
-.first-item-product-left-description, .second-item-product-right-description {
-    width: 190px;
-    /* height: 132px; */
-
-    align-self: stretch;
-
-    color: var(--Gray, #808080);
-    font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Small */
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px; /* 157.143% */
-}
-
-/* remaining products in left and right columns */
+/* products in left and right columns */
 .item-product-left, .item-product-right {
     width: 302px;
     /* height: 96px; */
@@ -79,10 +34,10 @@
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
     background-color: #f6f4f47c;
-    color: whitesmoke;
+    color: black;
 }
 
-/* product-info for remaining products */
+/* product information */
 .item-product-info {
     width: 190px;
     /* height: 86px; */
@@ -95,7 +50,7 @@
 
 }
 
-/* description of remaining products (both left and rightc columns) */
+/* description of products*/
 .description {
     width: 190px;
     /* height: 22px; */
@@ -103,7 +58,7 @@
     /* layout */
     align-self: stretch;
 
-    color: var(--Gray, #808080);
+    color: black;
     font-feature-settings: 'clig' off, 'liga' off;
 
     /* Small */
