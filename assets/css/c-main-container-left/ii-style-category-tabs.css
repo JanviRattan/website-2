@@ -23,6 +23,14 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
+    font-weight: bolder;
+    color: black;
+    font-size:medium;
+}
+
+.tab-item.clicked {
+    background-color: rgb(255, 119, 0);
+
 }
 
 .tab-item-more {
