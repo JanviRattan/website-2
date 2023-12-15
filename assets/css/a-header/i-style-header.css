@@ -12,6 +12,8 @@
     /* fix the position of nav-bar at the top of page */
     position: sticky;
     top: 0;
+
+    background-color: white;
 }
 
 .img-logo-navbar {
