@@ -5,7 +5,7 @@
     /* fix the position at its current place (should stay fixed while scrolling) */
     position: sticky;
     top: 50px; /*stay below height of nav-bar but above category name (whose height is 60px) */
-    background-color: white;
+    background-color: black;
     color: black; /*color of text*/
 }
 
@@ -24,12 +24,14 @@
     align-items: flex-start;
     gap: 14px;
     font-weight: bolder;
-    color: black;
+    color: rgb(222, 178, 96);
     font-size:medium;
 }
 
 .tab-item.clicked {
-    background-color: rgb(255, 119, 0);
+    box-shadow: 0 -2px 0 white; /* Adjust the y-offset and color as needed */
+    
+    color: white
 
 }
 

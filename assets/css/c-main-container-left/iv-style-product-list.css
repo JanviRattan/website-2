@@ -33,7 +33,8 @@
     /* style */
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
-    background: var(--White, #FFF);
+    background-color: #f6f4f47c;
+    color: whitesmoke;
 }
 
 .first-item-product-left-product-info, .second-item-product-right-product-info {
@@ -77,7 +78,8 @@
     /* style */
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
-    background: var(--White, #FFF);
+    background-color: #f6f4f47c;
+    color: whitesmoke;
 }
 
 /* product-info for remaining products */
