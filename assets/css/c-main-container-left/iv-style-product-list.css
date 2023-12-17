@@ -160,4 +160,5 @@
     /*Here, '../' is used to go up one leve up you need to go up one level (../) to reach the assets folder and then navigate to the images folder. */
     background-image: url("../../images/bento.png");
     background-size: cover;
+
 }

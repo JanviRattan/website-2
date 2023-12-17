@@ -18,7 +18,7 @@
     align-self: stretch;
 }
 
-/*------------------------- CONTROL QUANTITY------------------ */
+------------------------- CONTROL QUANTITY------------------
 .control-quantity {
     width: 68px;
     height: 24px;
@@ -28,24 +28,6 @@
     gap: 8px;
 }
 
-.less {
-    width: 8px;
-    height: 8px;
-    display: flex;
-    padding: 4px;
-    align-items: flex-end;
-    justify-content: center;
-
-
-    /* style */
-    border-radius: 8px;
-    background: var(--Whitesmoke, #F5F5F5);
-}
-
-.minus-icon {
-    width: 8px;
-    height: 8px;
-}
 
 .control-quantity-number {
     width: 20px;
@@ -62,23 +44,7 @@
     line-height: 24px; /* 150% */
 }
 
-.more {
-    width: 8px;
-    height: 8px;
-    display: flex;
-    padding: 4px;
-    align-items: flex-end;
-    justify-content: center;
 
-    /* style */
-    border-radius: 8px;
-    background: var(--Whitesmoke, #F5F5F5);
-}
-
-.plus-icon {
-    width: 8px;
-    height: 8px;
-}
 
 
 /*-------------------------CART ITEM INFO------------------ */
@@ -124,7 +90,7 @@
 /*-------------------------ROW SUBTOTAL------------------ */
 .row-sub-total {
     width: 70px;
-    color: var(--Black, #222);
+    color: var(--Gray, #e4dede);
     text-align: right;
     font-feature-settings: 'clig' off, 'liga' off;
 

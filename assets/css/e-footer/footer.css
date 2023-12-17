@@ -12,6 +12,12 @@ footer {
 
     margin-top: 100px;
 
+    @media only screen  {
+        /* Adjust styles for screens with a maximum width of 600px */
+        padding: 16px; /* Example adjustment for smaller screens */
+        gap: 8px; /* Another example adjustment */
+    }
+
 }
 
 

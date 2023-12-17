@@ -9,19 +9,19 @@
     margin-top: auto;
 }
 
-.discount-text {
+/* .discount-text {
     align-self: stretch;
     align-items: flex-start;
     color: var(--Success, #28A745);
     font-feature-settings: 'clig' off, 'liga' off;
 
     /* Paragraph Bold */
-    font-family: Inter;
+    /* font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px; /* 150% */
-}
+/* } */ 
 
 .sub-total {
     color: var(--Success, #28A745);

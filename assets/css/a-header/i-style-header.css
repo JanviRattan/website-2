@@ -1,7 +1,7 @@
 /* HEADER */
 .nav-bar {
     display: flex;
-    width: 1152px;
+    /* width: 1152px; */
     height: 40px;
     padding: 8px 144px;  
     justify-content: center;
@@ -14,7 +14,16 @@
     top: 0;
 
     background-color: black;
+
+    @media only screen and (max-width: 1152px) {
+        /* Adjust styles for screens with a maximum width of 600px */
+        padding: 16px; /* Example adjustment for smaller screens */
+        gap: 8px; /* Another example adjustment */
+
+    
+    }
 }
+
 
 .img-logo-navbar {
     width: 40px;
@@ -47,5 +56,7 @@
     /* style */
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
+
 }
+
 

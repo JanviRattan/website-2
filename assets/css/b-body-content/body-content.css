@@ -4,5 +4,18 @@ body {
 .body-content {
     display: flex;
     justify-content: center;
-    width: 1440;
+    /* width: 1440; */
+
+    width: 100%; /* Use a percentage instead of fixed width */
+    max-width: 1440px; /* Set a maximum width for large screens */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for screens with a maximum width of 600px */
+    .body-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items vertically */
+    }
 }
