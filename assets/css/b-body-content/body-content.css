@@ -7,8 +7,9 @@ body {
     /* width: 1440; */
 
     width: 100%; /* Use a percentage instead of fixed width */
-    max-width: 1440px; /* Set a maximum width for large screens */
+    max-width: 100%; /* Set a maximum width for large screens */
     margin: 0 auto; /* Center the content horizontally */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
 /* Media queries for responsiveness */

@@ -12,7 +12,8 @@
     /* style */
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
-    /* background: var(--White, #FFF); */
+
+    position: relative;
 
     /* Create space at the bottom of the floating basket */
     margin-bottom: 24px;

@@ -3,8 +3,16 @@
     height: 24px;
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    align-items: flex-end; 
+    margin-top: auto;
     align-self: stretch;
 
-    margin-top: auto;
+    font-size: larger;
+
+    gap: 140px;
+
+    font-weight: bolder;
+    font-size: larger;
+
+    color: #28A745;
 }
