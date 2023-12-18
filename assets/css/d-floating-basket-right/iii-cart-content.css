@@ -59,19 +59,6 @@
     flex: 1 0 0;
 }
 
-#item-category-a, #item-category-b, #item-category-c {
-    align-self: stretch;
-    color: var(--Black, #222);
-    font-feature-settings: 'clig' off, 'liga' off;
-
-    /* Paragraph Bold */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 150% */
-}
-
 .item-options {
     align-self: stretch;
     color: var(--Gray, #e4dede);

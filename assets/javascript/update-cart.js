@@ -1,98 +1,110 @@
-
+// Wait for the HTML document to be fully loaded before executing the script
 document.addEventListener("DOMContentLoaded", function () {
+    // Track the counts of each item and their corresponding prices
     var itemCounts = {};
     var itemPrices = {};
 
+    // Select all elements with the classes 'item-product-left' or 'item-product-right'
     var itemProducts = document.querySelectorAll('.item-product-left, .item-product-right');
 
+    // Attach a click event listener to each item product element
     itemProducts.forEach(function (itemProduct) {
         itemProduct.addEventListener('click', function () {
+            // Extract category, title, and price information from the clicked item
             var category = getCategory(itemProduct);
             var title = getTitle(itemProduct);
-            var price = getPrice(itemProduct);
             var priceIndicator = getPriceIndicator(itemProduct);
 
-            updateFloatingBasket(category, title, price, priceIndicator);
+            // Update the floating basket display and track item price
+            updateFloatingBasket(category, title, priceIndicator);
             itemPrices[category + '-' + title] = priceIndicator;
 
+            // Update the total price display
             updateTotalPrice();
         });
     });
 
+    // Get the category ID from the closest ancestor with the class 'main-container'
     function getCategory(itemProduct) {
         var categoryElement = itemProduct.closest('.main-container').querySelector('.category-name div');
         return categoryElement.getAttribute('id');
     }
 
+    // Get the text content of the 'title' element within the item product
     function getTitle(itemProduct) {
         var titleElement = itemProduct.querySelector('.title');
         return titleElement.textContent;
     }
 
-    function getPrice(itemProduct) {
-        var priceElement = itemProduct.querySelector('.price-indicator');
-        return parseFloat(priceElement.textContent.replace('$', ''));
-    }
-
+    // Get the text content of the 'price-indicator' element within the item product
     function getPriceIndicator(itemProduct) {
         var priceElement = itemProduct.querySelector('.price-indicator');
         return priceElement.textContent;
     }
 
-    function updateFloatingBasket(category, title, price, priceIndicator) {
-        var itemCategoryElement = document.getElementById('item-' + category);
+    // Update the floating basket display based on the selected item
+    function updateFloatingBasket(category, title, priceIndicator) {
         var itemKey = category + '-' + title;
 
+        // Check if the item is already in the basket
         if (itemCounts[itemKey]) {
+            // If yes, increment the count and update the existing item
             itemCounts[itemKey]++;
-            updateExistingItem(itemKey, itemCounts[itemKey], price);
+            updateExistingItem(itemKey, itemCounts[itemKey]);
         } else {
+            // If no, create a new item in the basket
             var newItemDiv = document.createElement('div');
-            newItemDiv.textContent = title + ' x1 - $' + price.toFixed(2);
-            newItemDiv.dataset.count = 1;
             newItemDiv.dataset.itemKey = itemKey;
             document.querySelector('.item-options').appendChild(newItemDiv);
 
             itemCounts[itemKey] = 1;
         }
 
-        var rowSubTotalElement = itemCategoryElement.closest('.item-cart').querySelector('.row-sub-total');
-        var currentSubTotal = parseFloat(rowSubTotalElement.textContent.replace('$', ''));
-        var newSubTotal = currentSubTotal + price;
-        rowSubTotalElement.textContent = '$' + newSubTotal.toFixed(2);
+        // Update the content of the item element with quantity and total price
+        var itemElement = document.querySelector('.item-options [data-item-key="' + itemKey + '"]');
+        if (itemElement) {
+            var count = itemCounts[itemKey];
+            var itemPrice = parseFloat(priceIndicator.replace('$', ''));
+            var totalItemPrice = itemPrice * count;
+            itemElement.textContent = title + ' x' + count + ' - $' + totalItemPrice.toFixed(2);
+            itemElement.dataset.count = count;
+        }
     }
 
-    function updateExistingItem(itemKey, count, price) {
+    // Update the existing item in the basket with the latest quantity and total price
+    function updateExistingItem(itemKey, count) {
         var existingItemDiv = document.querySelector('.item-options [data-item-key="' + itemKey + '"]');
 
         if (existingItemDiv) {
             var title = existingItemDiv.textContent.split(' x')[0];
-            existingItemDiv.textContent = title + ' x' + count + ' - $' + (count * price).toFixed(2);
+            var itemPrice = parseFloat(itemPrices[itemKey].replace('$', ''));
+            var totalItemPrice = itemPrice * count;
+            existingItemDiv.textContent = title + ' x' + count + ' - $' + totalItemPrice.toFixed(2);
             existingItemDiv.dataset.count = count;
         }
     }
 
+    // Update the total price displayed on the checkout button
     function updateTotalPrice() {
         var total = 0;
 
+        // Iterate through each key in the itemCounts object
         for (var key in itemCounts) {
-            var itemKeyComponents = key.split('-');
-            var category = itemKeyComponents[0];
-            var title = itemKeyComponents[1];
-            var itemPrice = getPriceByCategoryAndTitle(category, title);
-            total += itemCounts[key] * itemPrice;
+            // Retrieve the price for the current item
+            var itemPrice = parseFloat(itemPrices[key].replace('$', ''));
+
+            // Retrieve the count for the current item
+            var itemCount = itemCounts[key];
+
+            // Add the total price for the current item to the total
+            total += itemPrice * itemCount;
         }
 
-        var totalElement = document.querySelector('.checkout-button .label-right');
+        // Update the content of the total-price element
+        var totalElement = document.getElementById('total-price');
         if (totalElement) {
             totalElement.textContent = '$' + total.toFixed(2);
+            console.log('Total:', total.toFixed(2));
         }
     }
-
-    function getPriceByCategoryAndTitle(category, title) {
-        var itemKey = category + '-' + title;
-        return parseFloat(itemPrices[itemKey]);
-    }
 });
-
-
