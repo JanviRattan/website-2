@@ -50,12 +50,12 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    /* background-color: rgba(220, 153, 64, 0.996); */
+    background-color: white;
 
     
     /* style */
     border-radius: 8px;
-    border: 1px solid var(--Gainsboro, #DCDCDC);
+    border: 1px solid var(--Gainsboro, #DCDCDC); 
 
 }
 

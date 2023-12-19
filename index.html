@@ -94,11 +94,12 @@
         
                 <!-- A.3: category-tabs -->
                 <div class="category-tabs">
+                    
 
                     <div class = "categories">
-                        <div class="tab-item"><a href="#category-a" class="tab-item">Category A</a></div>
-                        <div class="tab-item"><a href="#category-b" class="tab-item">Category B</a></div>
-                        <div class="tab-item"><a href="#category-c" class="tab-item">Category C</a></div>
+                        <div class="tab-item" id="category-a" onclick="myFunction('category-a')"><a href="#category-a" class="tab-item">Category A</a></div>
+                        <div class="tab-item" id="category-b" onclick="myFunction('category-b')"><a href="#category-b" class="tab-item">Category B</a></div>
+                        <div class="tab-item" id="category-c" onclick="myFunction('category-c')"><a href="#category-c" class="tab-item">Category C</a></div>
                     </div>
         
                     <div class="tab-item-more">
@@ -938,6 +939,12 @@
     <script src = "assets/javascript/in-page-links.js"> </script>
     <script src = "assets/javascript/less-more-buttons.js"> </script>
     <script src = "assets/javascript/update-cart.js"> </script>
+    <script>
+        function myFunction(name) {
+            console.log(name);
+            document.getElementById(name).style.borderBottom = "orange solid 2px";
+        }
+    </script>
     
 </body>
 </html>
