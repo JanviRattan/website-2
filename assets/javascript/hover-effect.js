@@ -23,15 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Apply effects to the clicked tab item
-            tabItem.style.color = 'var(--storefront-brand-color-customizable, #FF6347)';
-            tabItem.style.textDecoration = 'underline';
+            tabItem.style.borderBottom = "orange solid 2px";
 
             // Update the currently active tab item
             activeTabItem = tabItem;
 
             // Reset color and remove underline from tab-content-more
-            tabContentMore.style.color = ''; // Add the original color here
-            tabContentMore.style.textDecoration = '';
+            tabContentMore.borderBottom = ' #808080 ';
         });
 
         // Add hover effects
@@ -93,3 +91,38 @@ document.addEventListener('DOMContentLoaded', function() {
         tabContentMore.style.textDecoration = '';
     });
 });
+
+
+// // script.js
+
+// function myFunction(name) {
+//     console.log(name);
+//     document.getElementById(name).style.borderBottom = "orange solid 2px";
+// }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var tabItems = document.querySelectorAll('.tab-item');
+
+//     tabItems.forEach(function(tabItem) {
+//         tabItem.addEventListener('click', function() {
+//             resetBorderBottom();
+//             myFunction(tabItem.id);
+//         });
+
+//         tabItem.addEventListener('mouseover', function() {
+//             tabItem.style.borderBottom = 'orange solid 2px';
+//         });
+
+//         tabItem.addEventListener('mouseleave', function() {
+//             if (tabItem.id !== activeTabItem) {
+//                 tabItem.style.borderBottom = '';
+//             }
+//         });
+//     });
+
+//     function resetBorderBottom() {
+//         tabItems.forEach(function(tabItem) {
+//             tabItem.style.borderBottom = '';
+//         });
+//     }
+// });

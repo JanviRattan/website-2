@@ -67,6 +67,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 157.143% */
+
+
+
+    color: var(--Gray, #808080);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Small */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
 }
 
 .product-name {

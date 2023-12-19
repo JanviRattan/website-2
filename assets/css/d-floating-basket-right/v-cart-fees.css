@@ -7,5 +7,14 @@
     align-self: stretch;
 
     gap: 155px;
-    color: #28A745;
+
+    color: var(--Success, #28A745);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Paragraph Bold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
 }

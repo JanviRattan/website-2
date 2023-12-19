@@ -1,7 +1,7 @@
 .category-tabs {
     width: 730px;
     height: 56px;
-    /* display: flex; */
+    display: flex;
     align-items: flex-end;
     border-bottom: #808080 solid 1px;
 
@@ -11,13 +11,6 @@
     background-color: white;
 }
 
-.underline {
-    width: 730px;
-    height: 2px;
-    flex-shrink: 0;
-
-    background: var(--Whitesmoke, #F5F5F5);
-}
 
 .categories {
     display: inline-flex;
