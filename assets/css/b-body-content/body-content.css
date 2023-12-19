@@ -1,22 +1,21 @@
 body {
     background-color: black;
+    margin: 0;  /* reset default margin to ensure full width*/
 }
 .body-content {
     display: flex;
     justify-content: center;
     /* width: 1440; */
 
-    width: 100%; /* Use a percentage instead of fixed width */
-    max-width: 100%; /* Set a maximum width for large screens */
-    margin: 0 auto; /* Center the content horizontally */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
-    /* Adjust styles for screens with a maximum width of 600px */
-    .body-content {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: center; /* Center items vertically */
+    .floating-basket {
+        width: 100%; /* Adjust the width as needed for smaller screens */
     }
 }

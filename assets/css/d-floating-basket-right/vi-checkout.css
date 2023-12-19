@@ -6,7 +6,7 @@
     padding: 12px 24px;
     align-items: center;
     justify-content: center;
-    margin-top: auto;
+
     
     gap: 108px;
     align-self: stretch;
@@ -15,7 +15,7 @@
     border-radius: 8px;
     background: var(--Success, #28A745);
 
-    /* Button Shadow */
+    /* button shadow */
     box-shadow: 4px 4px 0px 0px rgba(34, 34, 34, 0.16);
 
     font-weight: bolder;
