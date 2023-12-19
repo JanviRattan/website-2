@@ -13,7 +13,7 @@
     position: sticky;
     top: 0;
 
-    background-color: black;
+    background-color: white;
 
     @media only screen and (max-width: 1152px) {
         /* Adjust styles for screens with a maximum width of 600px */
@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    background-color: rgba(220, 153, 64, 0.996);
+    /* background-color: rgba(220, 153, 64, 0.996); */
 
     
     /* style */

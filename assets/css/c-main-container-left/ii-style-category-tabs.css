@@ -5,8 +5,8 @@
     /* fix the position at its current place (should stay fixed while scrolling) */
     position: sticky;
     top: 50px; /*stay below height of nav-bar but above category name (whose height is 60px) */
-    background-color: black;
-    color: black; /*color of text*/
+    background-color: white;
+    
 }
 
 .categories {
@@ -15,6 +15,7 @@
     gap: 24px;
     width: 635px;
     height: 40px;
+    
 }
 
 .tab-item {
@@ -23,9 +24,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
-    font-weight: bolder;
-    color: rgb(222, 178, 96);
-    font-size:medium;
+
+    color: var(--Gray, #808080);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Paragraph */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
 }
 
 .tab-item.clicked {
@@ -51,9 +59,16 @@
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
-    font-weight: bolder;
-    color: rgb(222, 178, 96);
-    font-size:medium;
+   
+    color: var(--Gray, #808080);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Paragraph */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
 }
 
 a {

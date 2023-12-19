@@ -61,7 +61,7 @@
 
 .item-options {
     align-self: stretch;
-    color: var(--Gray, #e4dede);
+    color: black;
     font-feature-settings: 'clig' off, 'liga' off;
     gap: 4px;
 
@@ -77,7 +77,7 @@
 /*-------------------------ROW SUBTOTAL------------------ */
 .row-sub-total {
     width: 70px;
-    color: var(--Gray, #e4dede);
+    color: black;
     text-align: right;
     font-feature-settings: 'clig' off, 'liga' off;
 

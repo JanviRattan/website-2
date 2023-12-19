@@ -4,15 +4,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end; 
-    margin-top: auto;
     align-self: stretch;
 
-    font-size: larger;
-
-    gap: 70px;
-
-    font-weight: bolder;
-    font-size: larger;
-
+    gap: 155px;
     color: #28A745;
 }

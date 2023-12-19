@@ -5,20 +5,18 @@
     height: 750px;
     padding: 24px;
     flex-direction: column;
-    /* align-items: flex-start; */
     gap: 24px;
     margin-left: 30px;
 
     /* style */
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
+    background-color: white;
 
     position: relative;
 
     /* Create space at the bottom of the floating basket */
     margin-bottom: 24px;
-
-    background-color: #3E3939;
 }
 
 .your-order {
@@ -27,9 +25,10 @@
     align-self: stretch;
 
     /* style */
-    color: var(--Black, #fefbfb);
+    color: var(--Black, #222);
     font-feature-settings: 'clig' off, 'liga' off;
 
+    /* Heading 4 */
     font-family: Inter;
     font-size: 20px;
     font-style: normal;

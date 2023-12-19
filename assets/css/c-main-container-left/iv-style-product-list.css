@@ -30,11 +30,11 @@
     align-items: flex-start;
     gap: 16px;
 
-    /* style */
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
-    background-color: #f6f4f47c;
-    color: black;
+    background: var(--White, #FFF);
+    
+    
 }
 
 /* product information */

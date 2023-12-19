@@ -8,6 +8,7 @@
     gap: 8px;
     font-size: large;
     font-weight: bolder;
+    
 }
 
 .category-a, .category-b, .category-c {
@@ -18,32 +19,27 @@
     color: var(--Black, #222);
     font-feature-settings: 'clig' off, 'liga' off;
 
-    /*text */
+    /* Heading 4 */
     font-family: Inter;
     font-size: 20px;
-
     font-style: normal;
     font-weight: 600;
     line-height: 28px; /* 140% */
-    font-weight: bolder;
 }
 
 .category-description {
     /* layout */
     align-self: stretch;
-    text-align: center;
 
-    color: white;
+    color: var(--Gray, #808080);
     font-feature-settings: 'clig' off, 'liga' off;
 
     /* Paragraph */
     font-family: Inter;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
-    font-weight: bolder;
-    background-color: #2C2727;
 }
   
 

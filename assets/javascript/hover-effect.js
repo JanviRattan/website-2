@@ -1,37 +1,95 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Define the classes that should have the hovering effect
-    var classesToHover = ['.item-product-left', '.item-product-right'];
+    // Select elements with specified classes
+    var tabItems = document.querySelectorAll('.tab-item, .tab-item-more');
+    var productItems = document.querySelectorAll('.item-product-left, .item-product-right');
+    var tabContentMore = document.querySelector('.tab-content-more');
 
-    // Add event listeners to elements with specified classes
-    classesToHover.forEach(function(className) {
-        var elements = document.querySelectorAll(className);
+    // Keep track of the currently active tab item
+    var activeTabItem = null;
 
-        // Initial styles
-        var originalStyles = {
-            border: '1px solid var(--Gainsboro, #DCDCDC)',
-            backgroundColor: '#f6f4f47c',
-            color: 'black',
-            borderRadius: '8px',
-            boxShadow: 'none' // Assuming there was no box shadow initially
+    // Add click effects for tab items
+    tabItems.forEach(function(tabItem) {
+        // Store the original styles for each tab
+        tabItem.originalStyles = {
+            color: getComputedStyle(tabItem).color,
+            textDecoration: getComputedStyle(tabItem).textDecoration
         };
 
-        // Add hover effect
-        elements.forEach(function(element) {
-            element.addEventListener('mouseover', function() {
-                element.style.border = '1px solid var(--storefront-brand-color-customizable, #FF6347)';
-                element.style.background = 'var(--White, #FFF)';
-                element.style.boxShadow = '4px 4px 0px 0px rgba(34, 34, 34, 0.16)';
-            });
+        tabItem.addEventListener('click', function() {
+            // Remove effects from the previously active tab item
+            if (activeTabItem) {
+                activeTabItem.style.color = activeTabItem.originalStyles.color;
+                activeTabItem.style.textDecoration = activeTabItem.originalStyles.textDecoration;
+            }
 
-            // Remove hover effect
-            element.addEventListener('mouseleave', function() {
-                // Revert to original styles
-                element.style.border = originalStyles.border;
-                element.style.backgroundColor = originalStyles.backgroundColor;
-                element.style.color = originalStyles.color;
-                element.style.borderRadius = originalStyles.borderRadius;
-                element.style.boxShadow = originalStyles.boxShadow;
-            });
+            // Apply effects to the clicked tab item
+            tabItem.style.color = 'var(--storefront-brand-color-customizable, #FF6347)';
+            tabItem.style.textDecoration = 'underline';
+
+            // Update the currently active tab item
+            activeTabItem = tabItem;
+
+            // Reset color and remove underline from tab-content-more
+            tabContentMore.style.color = ''; // Add the original color here
+            tabContentMore.style.textDecoration = '';
         });
+
+        // Add hover effects
+        tabItem.addEventListener('mouseover', function() {
+            // Apply hover effect only if the tab item is not the active one
+            if (tabItem !== activeTabItem) {
+                tabItem.style.color = 'var(--storefront-brand-color-customizable, #FF6347)';
+                tabItem.style.textDecoration = 'underline';
+            }
+        });
+
+        // Remove hover effect
+        tabItem.addEventListener('mouseleave', function() {
+            // Remove hover effect only if the tab item is not the active one
+            if (tabItem !== activeTabItem) {
+                tabItem.style.color = tabItem.originalStyles.color;
+                tabItem.style.textDecoration = tabItem.originalStyles.textDecoration;
+            }
+        });
+    });
+
+    // Add border color change and box shadow effects for product items
+    productItems.forEach(function(productItem) {
+        productItem.addEventListener('mouseover', function() {
+            productItem.style.border = '1px solid #FF6347';
+            productItem.style.boxShadow = '4px 4px 0px 0px rgba(34, 34, 34, 0.16)';
+        });
+
+        productItem.addEventListener('mouseleave', function() {
+            productItem.style.border = '1px solid #DCDCDC';
+            productItem.style.boxShadow = 'none';
+        });
+    });
+
+    // Add click effects for tab-content-more
+    tabContentMore.addEventListener('click', function() {
+        // Add your click effects for tab-content-more here
+        // You can apply similar logic as for tab items
+        // For example:
+        tabContentMore.style.color = 'var(--storefront-brand-color-customizable, #FF6347)';
+        tabContentMore.style.textDecoration = 'underline';
+    });
+
+    // Add hover effects for tab-content-more
+    tabContentMore.addEventListener('mouseover', function() {
+        // Add your hover effects for tab-content-more here
+        // You can apply similar logic as for tab items
+        // For example:
+        tabContentMore.style.color = 'var(--storefront-brand-color-customizable, #FF6347)';
+        tabContentMore.style.textDecoration = 'underline';
+    });
+
+    // Remove hover effect for tab-content-more
+    tabContentMore.addEventListener('mouseleave', function() {
+        // Remove your hover effect for tab-content-more here
+        // You can apply similar logic as for tab items
+        // For example:
+        tabContentMore.style.color = ''; // Add the original color here
+        tabContentMore.style.textDecoration = '';
     });
 });
