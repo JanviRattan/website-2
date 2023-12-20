@@ -1,7 +1,8 @@
 footer {
+    display: flex;
     width: 100%; /* Occupy the full width of the viewport */
     height: 102px;
-    display: flex;
+    
     padding: 48px 144px;
     flex-direction: column;
     align-items: flex-start;
@@ -10,23 +11,23 @@ footer {
     /* style */
     background: var(--Whitesmoke, #F5F5F5);
 
-    margin-top: 100px;
+    margin-top: 159px;
 
-    @media only screen  {
+    /* @media only screen  { */
         /* Adjust styles for screens with a maximum width of 600px */
-        padding: 16px; /* Example adjustment for smaller screens */
-        gap: 8px; /* Another example adjustment */
-    }
+        /* padding: 16px; Example adjustment for smaller screens */
+        /* gap: 8px; Another example adjustment */
+    /* } */
 
 }
 
-
+/* 
 .orderich-logo {
     width: 117px;
     height: 32px;
-    background-image: url("../../images/orderich-logo.png");
-    background-size: cover;
-}
+    /* background-image: url("../../images/orderich-logo.png"); */
+    /* background-size: cover; */
+/* }  */
 
 .footer-content {
     width: auto;

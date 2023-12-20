@@ -81,6 +81,7 @@
                         
         
                         <!-- details of restaurant -->
+                        
                         <div class = "restaurant-details">
                             <div>📍 Main Street 123, 1234 AB, Rotterdam</div>
                             <div>☎️ 0101234567</div>
@@ -91,7 +92,6 @@
         
                 </div>
         
-        
                 <!-- A.3: category-tabs -->
                 <div class="category-tabs">
                     <nav>
@@ -99,7 +99,7 @@
                             <li class="tab-item" ><p  class="tab-category-name">Category A</p></li>
                             <li class="tab-item" ><p  class="tab-category-name">Category B</p></li>
                             <li class="tab-item" ><p  class="tab-category-name">Category C</p></li>
-                            <li class="tab-item"><p >More</p></li>
+                            <!-- <li class="tab-item"><p >More</p></li> -->
                         </ul>
                         <div class="bar"></div>
                     </nav>
@@ -857,9 +857,16 @@
 
                     <!-----------------------  2. order-option -------------------- -->
                     <div class="order-option">
-                        <div class="bag"><div class="group"> </div> </div>
+
+                        <div class="bag">
+                            <div class="group-bag"><img src = "./assets/images/bag.svg" alt ="bag"> </div>
+                         </div>
+                        
                         <div class="text"><b> Pickup</b> at our location</div>
-                        <div class="pencil"><div class="group-p"> </div> </div>
+                        <div class="pencil">
+                            <div class="group-pencil"><img src = "./assets/images/pencil.svg" alt ="pencil"> </div>
+                         </div>
+
                     </div>  
 
 
@@ -914,8 +921,9 @@
 
     <!-- C. FOOTER -->
     <footer>
-        <div class="orderich-logo"> </div> 
-
+        
+        <img src = "./assets/images/orderich-logo.svg" alt ="orderich-logo">
+        
         <div class="footer-content">
 
             <div class="footer-details">
@@ -935,7 +943,7 @@
 
     <script src = "assets/javascript/hover-effect.js"> </script>
     <script src = "assets/javascript/in-page-links.js"> </script>
-    <!-- <script src = "assets/javascript/less-more-buttons.js"> </script> -->
+    
     <script src = "assets/javascript/update-cart.js"> </script>
     
 </body>
