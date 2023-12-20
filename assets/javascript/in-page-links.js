@@ -23,11 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Scroll to the target section
             var categoryID = categoryNameElement.innerHTML.toString().toLowerCase().replace(/\s+/g, '-');;
             var targetElement = document.getElementById(categoryID)
-            targetElement.scrollIntoView();
-        
-            // Adjust the scroll position to make the section appear from a certain height below the top
-            window.scrollBy(0, -offset);
-            
+            window.scrollTo({top: targetElement.offsetTop-offset, behavior: 'smooth'});
         });
     });
-});
+})
