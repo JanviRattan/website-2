@@ -1,14 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var targetSection = document.getElementById('targetSection');
-
-    // Calculate the height from the top, considering the nav-bar height (40px) and category-tabs height (56px)
-    var offset = 40 + 56;
-
-    // Scroll to the target section
-    targetSection.scrollIntoView();
-
-    // Adjust the scroll position to make the section appear from a certain height below the top
-    window.scrollBy(0, -offset);
+   
 });
 
 
@@ -26,6 +17,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Add 'clicked' class to the clicked tab item
             tabItem.classList.add('clicked');
+            var categoryNameElement = tabItem.querySelector('.tab-category-name')
+            // Calculate the height from the top, considering the nav-bar height (40px) and category-tabs height (56px)
+            var offset = 40 + 80;
+            // Scroll to the target section
+            var categoryID = categoryNameElement.innerHTML.toString().toLowerCase().replace(/\s+/g, '-');;
+            var targetElement = document.getElementById(categoryID)
+            targetElement.scrollIntoView();
+        
+            // Adjust the scroll position to make the section appear from a certain height below the top
+            window.scrollBy(0, -offset);
+            
         });
     });
 });

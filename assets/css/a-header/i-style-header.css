@@ -59,4 +59,10 @@
 
 }
 
+.button-container-nederlands:hover,
+.button-container-login:hover{
+    cursor: pointer;
+    background-color: #DCDCDC;
+    box-shadow: 2px 2px gray;
+}
 

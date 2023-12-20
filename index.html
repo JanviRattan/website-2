@@ -94,16 +94,15 @@
         
                 <!-- A.3: category-tabs -->
                 <div class="category-tabs">
-                    
-                    <div class = "categories">
-                        <div class="tab-item" class="category-a" onclick="myFunction('category-a')"><a href="#category-a" class="tab-item">Category A</a></div>
-                        <div class="tab-item" class="category-b" onclick="myFunction('category-b')"><a href="#category-b" class="tab-item">Category B</a></div>
-                        <div class="tab-item" class="category-c" onclick="myFunction('category-c')"><a href="#category-c" class="tab-item">Category C</a></div>
-                    </div>
-        
-                    <div class="tab-item-more">
-                        <div class = "tab-content-more">More</div>
-                    </div>
+                    <nav>
+                        <ul class = "categories">
+                            <li class="tab-item" ><p  class="tab-category-name">Category A</p></li>
+                            <li class="tab-item" ><p  class="tab-category-name">Category B</p></li>
+                            <li class="tab-item" ><p  class="tab-category-name">Category C</p></li>
+                            <li class="tab-item"><p >More</p></li>
+                        </ul>
+                        <div class="bar"></div>
+                    </nav>
 
                 </div>
         
@@ -895,7 +894,7 @@
                     <!-------------------------    5. discount ------------------->
                     <div class="cart-fees">
                         <div class="discount-text">Discount (10%)</div>
-                        <div class="discount-amount" id="discount-price">-$0</div>
+                        <div class="discount-amount" id="discount-price">$0</div>
                     </div>
 
                     <!-----------------------  6. checkout -------------------- -->
@@ -938,12 +937,6 @@
     <script src = "assets/javascript/in-page-links.js"> </script>
     <!-- <script src = "assets/javascript/less-more-buttons.js"> </script> -->
     <script src = "assets/javascript/update-cart.js"> </script>
-    <script>
-        function myFunction(name) {
-            // console.log(name);
-            // document.getElementById(name).style.borderBottom = "orange solid 2px";
-        }
-    </script>
     
 </body>
 </html>

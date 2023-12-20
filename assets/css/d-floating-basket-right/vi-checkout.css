@@ -5,7 +5,7 @@
     padding: 12px 24px;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
     gap: 108px;
     align-self: stretch;
 
@@ -17,7 +17,9 @@
     /* Button Shadow */
     box-shadow: 4px 4px 0px 0px rgba(34, 34, 34, 0.16);
 }
-
+.checkout-button:hover {
+    opacity: 0.5;
+}
 .label-left {
     width: 75px;
     height: 24px;

@@ -2,7 +2,8 @@
     /* layout */
     display: flex;
     width: 302px;
-    height: 750px;
+    min-height: 500px;
+    height: fit-content;
     padding: 24px;
     flex-direction: column;
     gap: 24px;
@@ -13,7 +14,6 @@
     border: 1px solid var(--Gainsboro, #DCDCDC);
     background-color: white;
 
-    position: relative;
 
     /* Create space at the bottom of the floating basket */
     margin-bottom: 24px;
@@ -21,8 +21,12 @@
     /* fix the position at its current place (should stay fixed while scrolling) */
     position: sticky;
     top: 50px; /*stay below height of nav-bar but above category name (whose height is 60px) */
-    background-color: white;
 }
+
+.floating-basket:hover{
+    box-shadow: 4px 4px rgb(241, 241, 241);
+}
+
 
 .your-order {
     width: 302px;

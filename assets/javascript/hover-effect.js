@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click effects for tab items
     tabItems.forEach(function(tabItem) {
         // Store the original styles for each tab
-        tabItem.originalStyles = {
-            color: getComputedStyle(tabItem).color,
-            textDecoration: getComputedStyle(tabItem).textDecoration
-        };
+        // tabItem.originalStyles = {
+        //     color: getComputedStyle(tabItem).color,
+        //     textDecoration: getComputedStyle(tabItem).textDecoration
+        // };
 
         tabItem.addEventListener('click', function() {
             // Remove effects from the previously active tab item
@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Apply effects to the clicked tab item
-            tabItem.style.borderBottom = "orange solid 2px";
 
             // Update the currently active tab item
             activeTabItem = tabItem;
@@ -35,20 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add hover effects
         tabItem.addEventListener('mouseover', function() {
             // Apply hover effect only if the tab item is not the active one
-            if (tabItem !== activeTabItem) {
-                tabItem.style.color = 'var(--storefront-brand-color-customizable, #FF6347)';
-                tabItem.style.textDecoration = 'underline';
-            }
+           
         });
 
         // Remove hover effect
-        tabItem.addEventListener('mouseleave', function() {
-            // Remove hover effect only if the tab item is not the active one
-            if (tabItem !== activeTabItem) {
-                tabItem.style.color = tabItem.originalStyles.color;
-                tabItem.style.textDecoration = tabItem.originalStyles.textDecoration;
-            }
-        });
+        // tabItem.addEventListener('mouseleave', function() {
+        //     // Remove hover effect only if the tab item is not the active one
+        //     if (tabItem !== activeTabItem) {
+        //         tabItem.style.color = tabItem.originalStyles.color;
+        //         tabItem.style.textDecoration = tabItem.originalStyles.textDecoration;
+        //     }
+        // });
     });
 
     // Add border color change and box shadow effects for product items

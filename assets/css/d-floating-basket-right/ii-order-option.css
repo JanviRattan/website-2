@@ -17,6 +17,7 @@
     
 }
 
+
 .bag {
   display: flex;
   width: 16px;
@@ -52,11 +53,16 @@
   display: flex;
   width: 16px;
   height: 16px;
-  padding: 0.667px 0.667px 0.523px 0.522px;
+  padding: 4px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  /* margin-left: 48px;
-  margin-top:5px; */
+}
+
+.pencil:hover{
+  border-radius: 9999px;
+  background: rgb(231, 231, 231);
+  opacity: 0.7;
+  cursor: pointer;
 }
 

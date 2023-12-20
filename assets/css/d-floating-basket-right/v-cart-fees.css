@@ -2,12 +2,8 @@
     width: 302px;
     height: 24px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end; 
+    justify-content: space-between;
     align-self: stretch;
-
-    gap: 155px;
-
     color: var(--Success, #28A745);
     font-feature-settings: 'clig' off, 'liga' off;
 

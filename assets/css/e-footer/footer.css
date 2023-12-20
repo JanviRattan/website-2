@@ -29,8 +29,7 @@ footer {
 }
 
 .footer-content {
-    width: 1152px;
-    height: 54px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

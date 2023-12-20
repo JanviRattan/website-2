@@ -29,7 +29,7 @@
     padding: 24px;
     align-items: flex-start;
     gap: 16px;
-
+    cursor: pointer;
     border-radius: 8px;
     border: 1px solid var(--Gainsboro, #DCDCDC);
     background: var(--White, #FFF);
