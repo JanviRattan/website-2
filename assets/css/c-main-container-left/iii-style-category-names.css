@@ -22,9 +22,16 @@
 .category-a, .category-b, .category-c {
     /* layout */
     align-self: stretch;
-    margin: 0;
 
- 
+    color: var(--Black, #222);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Heading 4 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
 }
 
 .category-description {
