@@ -17,7 +17,6 @@
     
 }
 
-
 .bag {
   display: flex;
   width: 16px;
@@ -26,7 +25,18 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+
   margin-right: 8px;
+}
+
+
+.group {
+  width: 16px;
+  height: 14.667px;
+  flex-shrink: 0;
+
+  background-image: url("../../images/bag.png");
+  background-size: cover;
  
 }
 
@@ -53,10 +63,19 @@
   display: flex;
   width: 16px;
   height: 16px;
-  padding: 4px;
+  padding: 0.667px 0.667px 0.523px 0.522px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+.group-p {
+  width: 14.811px;
+  height: 14.811px;
+  flex-shrink: 0;
+  
+  background-image: url("../../images/pencil.png");
+  background-size: cover;
 }
 
 .pencil:hover{
