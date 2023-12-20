@@ -3,12 +3,10 @@
     display: flex;
     /* width: 1152px; */
     height: 40px;
-    padding: 8px 144px;  
-    justify-content: center;
+    padding: 8px 5%;  
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 839px;
     flex-shrink: 0;
-
     /* fix the position of nav-bar at the top of page */
     position: sticky;
     top: 0;

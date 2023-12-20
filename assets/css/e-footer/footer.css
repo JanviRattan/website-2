@@ -1,6 +1,5 @@
 footer {
     display: flex;
-    width: 100%; /* Occupy the full width of the viewport */
     height: 102px;
     
     padding: 48px 144px;
